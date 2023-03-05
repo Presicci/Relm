@@ -8,6 +8,7 @@ TagManager:
   - PlayerWeapon
   - PlayerProjectile
   - InventorySlot
+  - AggressiveEnemy
   layers:
   - Default
   - TransparentFX
