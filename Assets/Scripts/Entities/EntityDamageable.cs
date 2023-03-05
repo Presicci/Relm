@@ -19,6 +19,7 @@ public class EntityDamageable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        if (!col.CompareTag("PlayerWeapon") && !col.CompareTag("PlayerProjectile")) return;
         if (_invulnerability) return;
         Debug.Log("HIT!");
         Damage(20);
