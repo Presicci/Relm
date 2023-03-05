@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(EntityDamageable))]
 public class EntityHealthBar : MonoBehaviour
 {
     private MaterialPropertyBlock _materialPropertyBlock;
