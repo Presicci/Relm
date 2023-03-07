@@ -9,4 +9,9 @@ public abstract class Interactable : MonoBehaviour
     public Vector3 promptOffset;
     protected bool interactable;
     public abstract void Interact();
+
+    public bool IsInteractable()
+    {
+        return interactable;
+    }
 }

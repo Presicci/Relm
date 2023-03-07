@@ -51,7 +51,10 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (col.CompareTag("Interactable"))
         {
-            _currentInteractableTransforms.Add(col.GetComponent<Interactable>());
+            Interactable interactable = col.GetComponent<Interactable>();
+            if (interactable == null) return;
+            if (!interactable.IsInteractable()) return;
+            _currentInteractableTransforms.Add(interactable);
             UpdateButtonPrompt();
         }
     }
