@@ -10,6 +10,7 @@ public delegate void OnInventoryResizeDelegate(int newSize);
 /// Manages inventory storage and interaction.
 /// </summary>
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
+[Serializable]
 public class Inventory
 {
     // Events for updating the UI_Inventory
@@ -25,6 +26,13 @@ public class Inventory
         _size = size;
         _items = new Item[size];
         UI_ItemDrag.OnMove += OnMoveEvent;
+    }
+
+    public void LoadInventory(Inventory inventory)
+    {
+        _size = inventory._size;
+        _items = inventory._items;
+        OnResize.Invoke(_size);
     }
 
     private void SetItem(Item item, int slot)
