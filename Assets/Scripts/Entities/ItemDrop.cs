@@ -12,6 +12,7 @@ public class ItemDrop : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
     private Item _item;
+    private bool _canPickup;
     
     public void Init(Item item)
     {
@@ -27,10 +28,23 @@ public class ItemDrop : MonoBehaviour
         StartCoroutine(RemoveGravity());
     }
 
+    public bool Pickup()
+    {
+        if (!_canPickup) return false;
+        Destroy(gameObject);
+        return true;
+    }
+
     private IEnumerator RemoveGravity()
     {
         yield return new WaitForSeconds(1f);
         _rigidbody2D.gravityScale = 0f;
         _rigidbody2D.velocity = Vector2.zero;
+        _canPickup = true;
+    }
+
+    public Item GetItem()
+    {
+        return _item;
     }
 }

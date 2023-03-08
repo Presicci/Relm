@@ -9,6 +9,7 @@ TagManager:
   - PlayerProjectile
   - InventorySlot
   - AggressiveEnemy
+  - ItemDrop
   layers:
   - Default
   - TransparentFX
