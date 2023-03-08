@@ -14,6 +14,11 @@ public class Player : MonoBehaviour
     {
         _inventory = new(20);   // Starting inventory of size 20 for now, can always be changed
     }
+
+    public void LoadPlayer(PlayerData playerData)
+    {
+        _inventory.LoadInventory(playerData.inventory);
+    }
     
     public Inventory GetInventory()
     {
