@@ -70,6 +70,12 @@ public class UI_DevConsole : MonoBehaviour
                     return true;
                 }
                 return false;
+            case "save":
+                PlayerData.Save(GameManager.GetPlayer());
+                return true;
+            case "load":
+                GameManager.GetPlayer().LoadPlayer(PlayerData.Load());
+                return true;
         }
         return false;
     }
