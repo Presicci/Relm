@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    private Player _player;
+    [SerializeField] private Player player;
 
     private void Awake()
     {
@@ -22,12 +22,10 @@ public class GameManager : MonoBehaviour
         
         // Loads all ItemScriptableObjects into a dictionary for referencing
         ItemDef.LoadItems();
-
-        _player = new Player();
     }
 
     public static Player GetPlayer()
     {
-        return Instance._player;
+        return Instance.player;
     }
 }
