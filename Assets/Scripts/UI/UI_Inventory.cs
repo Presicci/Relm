@@ -29,6 +29,7 @@ public class UI_Inventory : MonoBehaviour
     private void RebuildInventory()
     {
         ResetChildren();
+        if (!gameObject.activeInHierarchy) return;
         _slots = new UI_InventorySlot[_size];
         for (int index = 0; index < _size; index++)
         {
@@ -74,6 +75,8 @@ public class UI_Inventory : MonoBehaviour
     private void OnEnable()
     {
         searchBar.text = "";
+        if (transform.childCount <= 0)
+            RebuildInventory();
     }
 
     private void ResetChildren()
