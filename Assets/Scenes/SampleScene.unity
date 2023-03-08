@@ -4021,6 +4021,12 @@ PrefabInstance:
       propertyPath: interactable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -727209068186246715, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: itemDropPrefab
+      value: 
+      objectReference: {fileID: 2906822389498359280, guid: 0db68de46e723744f86f9402f62aecd7,
+        type: 3}
     - target: {fileID: 757128558143899226, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: m_Enabled
@@ -5597,6 +5603,12 @@ PrefabInstance:
       propertyPath: interactable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -727209068186246715, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: itemDropPrefab
+      value: 
+      objectReference: {fileID: 2906822389498359280, guid: 0db68de46e723744f86f9402f62aecd7,
+        type: 3}
     - target: {fileID: 757128558143899226, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: m_Enabled
@@ -8365,6 +8377,12 @@ PrefabInstance:
       propertyPath: interactable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -727209068186246715, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: itemDropPrefab
+      value: 
+      objectReference: {fileID: 2906822389498359280, guid: 0db68de46e723744f86f9402f62aecd7,
+        type: 3}
     - target: {fileID: 757128558143899226, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: m_Enabled
@@ -10350,6 +10368,12 @@ PrefabInstance:
       propertyPath: interactable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -727209068186246715, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: itemDropPrefab
+      value: 
+      objectReference: {fileID: 2906822389498359280, guid: 0db68de46e723744f86f9402f62aecd7,
+        type: 3}
     - target: {fileID: 757128558143899226, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: m_Enabled

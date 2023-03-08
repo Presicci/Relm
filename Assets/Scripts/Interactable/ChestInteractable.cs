@@ -6,7 +6,7 @@ using UnityEngine;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public class ChestInteractable : Interactable
 {
-    [SerializeField] private GameObject itemPrefab;
+    [SerializeField] private ItemDrop itemDropPrefab;
     [SerializeField] private Sprite openedSprite;
     
     private PlayerInteraction _player;
@@ -25,6 +25,7 @@ public class ChestInteractable : Interactable
         if (!interactable) return;
         _spriteRenderer.sprite = openedSprite;
         interactable = false;
-        Instantiate(itemPrefab, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity);
+        ItemDrop itemDrop = Instantiate(itemDropPrefab, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity);
+        itemDrop.Init(ItemDef.GetById(1));  // Tempt item for now
     }
 }
