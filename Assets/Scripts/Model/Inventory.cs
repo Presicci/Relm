@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Linq;
 
 public delegate void OnInventoryRemoveDelegate(int slot);
 public delegate void OnInventoryAddDelegate(int slot, Item item);
@@ -51,7 +52,7 @@ public class Inventory
         return true;
     }
 
-    public bool AddItem(Item item, int slot)
+    private bool AddItem(Item item, int slot)
     {
         if (_items[slot] != null)
         {
@@ -85,6 +86,16 @@ public class Inventory
             }
         }
         return -1;
+    }
+
+    public bool HasRoomFor(int amount)
+    {
+        return GetFreeSlots() >= amount;
+    }
+
+    public int GetFreeSlots()
+    {
+        return _items.Count(i => i == null);
     }
 
     public void Resize(int newSize)
