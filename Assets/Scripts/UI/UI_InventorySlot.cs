@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ using UnityEngine.UI;
 public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
 {
     [SerializeField] private Transform itemImageTransform;
+    [SerializeField] private UI_ContextMenu contextMenu;
     private int _slotIndex;
     private Image _itemImage;
     private Item _item;
@@ -68,6 +70,17 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
             if (_item == null) return;
             _itemImage.color = new Color(1, 1, 1, 0.5f);
             UI_ItemDrag.Instance.DragItem(this);
+        }
+        else if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            if (_item == null) return;
+            contextMenu.SetupMenu(Input.mousePosition, new (string, Action)[]
+            {
+                ("Equip", () => Debug.Log("Equip")),
+                ("Use", () => Debug.Log("Use")),
+                ("Inspect", () => Debug.Log("Inspect")),
+                ("Discard", () => GameManager.GetPlayer().GetInventory().RemoveFromSlot(_slotIndex))
+            });
         }
     }
 
