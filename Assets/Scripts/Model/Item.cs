@@ -1,30 +1,32 @@
+using System;
 using UnityEngine;
 
 /// <summary>
 /// Item object.
 /// </summary>
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
+[Serializable]
 public class Item
 {
-    private readonly ItemScriptableObject _data;
+    private int _itemId;
 
-    public Item(ItemScriptableObject data)
+    public Item(int itemId)
     {
-        _data = data;
+        _itemId = itemId;
     }
 
     public string GetName()
     {
-        return _data.itemName;
+        return ItemDef.GetDataById(_itemId).name;
     }
     
     public string GetDescription()
     {
-        return _data.itemDescription;
+        return ItemDef.GetDataById(_itemId).itemDescription;
     }
     
     public Sprite GetSprite()
     {
-        return _data.sprite;
+        return ItemDef.GetDataById(_itemId).sprite;
     }
 }

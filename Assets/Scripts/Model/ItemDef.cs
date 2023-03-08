@@ -29,6 +29,11 @@ public class ItemDef
 
     public static Item GetById(int itemId)
     {
-        return _loadedItems.ContainsKey(itemId) ? new Item(_loadedItems[itemId]) : null;
+        return _loadedItems.ContainsKey(itemId) ? new Item(itemId) : null;
+    }
+
+    public static ItemScriptableObject GetDataById(int itemId)
+    {
+        return _loadedItems.ContainsKey(itemId) ? _loadedItems[itemId] : null;
     }
 }
