@@ -63,9 +63,12 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (_item == null) return;
-        _itemImage.color = new Color(1, 1, 1, 0.5f);
-        UI_ItemDrag.Instance.DragItem(this);
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            if (_item == null) return;
+            _itemImage.color = new Color(1, 1, 1, 0.5f);
+            UI_ItemDrag.Instance.DragItem(this);
+        }
     }
 
     public int GetSlotIndex()
