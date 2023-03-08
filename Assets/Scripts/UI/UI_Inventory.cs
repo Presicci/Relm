@@ -22,8 +22,6 @@ public class UI_Inventory : MonoBehaviour
         Inventory.OnRemove += OnRemove;
         Inventory.OnResize += OnResize;
         UI_ItemDrag.OnMove += OnMove;
-
-        transform.parent.parent.gameObject.SetActive(false);
     }
 
     private void RebuildInventory()
