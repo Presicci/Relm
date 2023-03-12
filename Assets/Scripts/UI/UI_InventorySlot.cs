@@ -9,6 +9,7 @@ using UnityEngine.UI;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
 {
+    [SerializeField] private UI_Tooltip tooltip;
     [SerializeField] private Transform itemImageTransform;
     [SerializeField] private UI_ContextMenu contextMenu;
     private int _slotIndex;
@@ -53,13 +54,13 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (_item != null)
-            UI_Tooltip.Instance.ActivateItemTooltip(_item);
+            tooltip.ActivateItemTooltip(_item);
         UI_ItemDrag.Instance.toSlot = _slotIndex;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        UI_Tooltip.Instance.DisableTooltip();
+        tooltip.DisableTooltip();
         UI_ItemDrag.Instance.toSlot = -1;
     }
 

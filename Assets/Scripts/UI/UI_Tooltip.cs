@@ -9,8 +9,7 @@ using UnityEngine.UI;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public class UI_Tooltip : MonoBehaviour
 {
-    public static UI_Tooltip Instance { get; private set; }
-    
+
     [SerializeField] private Transform itemName;
     [SerializeField] private Transform itemDescription;
     private TextMeshProUGUI _itemNameTextMesh;
@@ -20,18 +19,9 @@ public class UI_Tooltip : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Debug.LogError("Multiple GameManagers!");
-            Destroy(gameObject);
-        } else {
-            Instance = this;
-        }
-        
         _itemNameTextMesh = itemName.GetComponent<TextMeshProUGUI>();
         _itemDescriptionTextMesh = itemDescription.GetComponent<TextMeshProUGUI>();
         _rectTransform = GetComponent<RectTransform>();
-        gameObject.SetActive(false);
     }
 
     private void Update()
@@ -41,10 +31,10 @@ public class UI_Tooltip : MonoBehaviour
 
     public void ActivateItemTooltip(Item item)
     {
+        gameObject.SetActive(true);
         transform.position = Input.mousePosition + _positionOffset;
         _itemNameTextMesh.SetText(item.GetName());
         _itemDescriptionTextMesh.SetText(item.GetDescription());
-        gameObject.SetActive(true);
         LayoutRebuilder.ForceRebuildLayoutImmediate(_rectTransform);    // This is done to ensure Layout Groups calculate properly
     }
 
