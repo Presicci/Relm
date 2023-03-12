@@ -12,24 +12,14 @@ public class UI_ItemDrag : MonoBehaviour
 {
     // Event for updating the UI_Inventory and player Inventory
     public static event OnInventoryMoveDelegate OnMove = delegate { };
-    
-    public static UI_ItemDrag Instance;
 
-    public int toSlot;
+    private int _toSlot;
     private UI_InventorySlot _fromSlot;
     private Image _image;
 
     private void Awake()
     {
-        if (Instance != null)
-        {
-            Debug.LogError("Multiple itemdrags!");
-            return;
-        }
-
-        Instance = this;
         _image = transform.GetComponent<Image>();
-        gameObject.SetActive(false);
     }
 
     private void Update()
@@ -41,16 +31,26 @@ public class UI_ItemDrag : MonoBehaviour
             _fromSlot.ResetAlpha();
 
             int fromIndex = _fromSlot.GetSlotIndex();
-            if (toSlot >= 0 && fromIndex != toSlot)
-                OnMove.Invoke(fromIndex, toSlot);
+            if (_toSlot >= 0 && fromIndex != _toSlot)
+                OnMove.Invoke(fromIndex, _toSlot);
         }
+    }
+
+    public void UpdateToSlot(int toSlot)
+    {
+        _toSlot = toSlot;
+    }
+
+    public void ResetToSlot()
+    {
+        _toSlot = -1;
     }
 
     public void DragItem(UI_InventorySlot slot)
     {
+        gameObject.SetActive(true);
         _fromSlot = slot;
         _image.sprite = slot.GetItem().GetSprite();
         transform.position = Input.mousePosition;
-        gameObject.SetActive(true);
     }
 }

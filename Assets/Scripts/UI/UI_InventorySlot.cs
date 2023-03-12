@@ -9,6 +9,7 @@ using UnityEngine.UI;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
 {
+    [SerializeField] private UI_ItemDrag itemDrag;
     [SerializeField] private UI_Tooltip tooltip;
     [SerializeField] private Transform itemImageTransform;
     [SerializeField] private UI_ContextMenu contextMenu;
@@ -55,13 +56,13 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
     {
         if (_item != null)
             tooltip.ActivateItemTooltip(_item);
-        UI_ItemDrag.Instance.toSlot = _slotIndex;
+        itemDrag.UpdateToSlot(_slotIndex);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         tooltip.DisableTooltip();
-        UI_ItemDrag.Instance.toSlot = -1;
+        itemDrag.ResetToSlot();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -70,7 +71,7 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
         {
             if (_item == null) return;
             _itemImage.color = new Color(1, 1, 1, 0.5f);
-            UI_ItemDrag.Instance.DragItem(this);
+            itemDrag.DragItem(this);
         }
         else if (eventData.button == PointerEventData.InputButton.Right)
         {

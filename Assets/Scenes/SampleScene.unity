@@ -5378,6 +5378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13abb75b79ce72b41ac8a63db3c41833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemDrag: {fileID: 1554494454}
   tooltip: {fileID: 1753972781}
   itemImageTransform: {fileID: 243173855}
   contextMenu: {fileID: 973199841}
@@ -8911,12 +8912,12 @@ GameObject:
   - component: {fileID: 1554494455}
   - component: {fileID: 1554494454}
   m_Layer: 5
-  m_Name: Item
+  m_Name: ItemDrag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1554494453
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8949,7 +8950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec15dabf7a742099fab150c623f269f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSlot: 0
 --- !u!114 &1554494455
 MonoBehaviour:
   m_ObjectHideFlags: 0
