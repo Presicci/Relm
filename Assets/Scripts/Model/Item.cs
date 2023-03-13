@@ -17,7 +17,7 @@ public class Item
 
     public string GetName()
     {
-        return ItemDef.GetDataById(_itemId).name;
+        return ItemDef.GetDataById(_itemId).itemName;
     }
     
     public string GetDescription()
