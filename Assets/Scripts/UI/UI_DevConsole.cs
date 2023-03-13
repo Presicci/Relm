@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -18,6 +19,7 @@ public class UI_DevConsole : MonoBehaviour
     private List<String> _commandHistory = new();
     private TMP_InputField _inputField;
     private RectTransform _rectTransform;
+    private int _previousCommandCursor;
     private List<Command> _commands = new()
     {
         new("item", new List<string> { "item id" }, args => GameManager.GetPlayer().GetInventory().AddItemToFirstAvailable(ItemDef.GetById(Convert.ToInt32(args[0])))),
@@ -35,13 +37,23 @@ public class UI_DevConsole : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftAlt))
+        {
+            LastCommand();
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftAlt))
+        {
+            NextCommand();
+        }
+        else if (Input.GetKeyDown(KeyCode.Return))
         {
             ProcessCommand();
+            _previousCommandCursor = 0;
         }
-        if (Input.GetKeyDown(KeyCode.BackQuote))
+        else if (Input.GetKeyDown(KeyCode.BackQuote))
         {
             RemoveLastChar();
+            _previousCommandCursor = 0;
             EventSystem.current.SetSelectedGameObject(null);
             gameObject.SetActive(false);
         }
@@ -95,6 +107,22 @@ public class UI_DevConsole : MonoBehaviour
         }
         _commandHistory.Add(cmd);
         PrintHistory();
+    }
+
+    private void LastCommand()
+    {
+        if (_commandHistory.Count <= 0) return;
+        if (_previousCommandCursor >= _commandHistory.Count) return;
+        _inputField.text = _commandHistory[^++_previousCommandCursor];
+        _inputField.caretPosition = _inputField.text.Length;
+    }
+    
+    private void NextCommand()
+    {
+        if (_commandHistory.Count <= 0) return;
+        if (_previousCommandCursor <= 1) return;
+        _inputField.text = _commandHistory[^--_previousCommandCursor];
+        _inputField.caretPosition = _inputField.text.Length;
     }
 
     private bool ParseCommand(string cmd)
