@@ -43,7 +43,10 @@ public class UI_DevConsole : MonoBehaviour
 
     private void RemoveLastChar()
     {
-        _inputField.text = _inputField.text.Remove(_inputField.text.Length - 1, 1);
+        if (_inputField.text.Length > 0)
+        {
+            _inputField.text = _inputField.text.Remove(_inputField.text.Length - 1, 1);
+        }
     }
 
     private void OnEnable()
