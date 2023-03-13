@@ -22,7 +22,6 @@ public class UI_DevConsole : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             ProcessCommand();
-            _inputField.DeactivateInputField();
         }
         if (Input.GetKeyDown(KeyCode.BackQuote))
         {
@@ -67,6 +66,13 @@ public class UI_DevConsole : MonoBehaviour
                 if (commandSplit.Length > 1)
                 {
                     GameManager.GetPlayer().GetInventory().Resize(Convert.ToInt32(commandSplit[1]));
+                    return true;
+                }
+                return false;
+            case "addgold":
+                if (commandSplit.Length > 1)
+                {
+                    GameManager.GetPlayer().Gold += Convert.ToInt32(commandSplit[1]);
                     return true;
                 }
                 return false;
