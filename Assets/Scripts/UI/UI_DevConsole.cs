@@ -25,9 +25,15 @@ public class UI_DevConsole : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.BackQuote))
         {
+            RemoveLastChar();
             EventSystem.current.SetSelectedGameObject(null);
             gameObject.SetActive(false);
         }
+    }
+
+    private void RemoveLastChar()
+    {
+        _inputField.text = _inputField.text.Remove(_inputField.text.Length - 1, 1);
     }
 
     private void OnEnable()
