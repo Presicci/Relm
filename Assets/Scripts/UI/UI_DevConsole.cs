@@ -74,6 +74,7 @@ public class UI_DevConsole : MonoBehaviour
             if (!commandSplit[0].ToLower().Equals(command.Identifier)) continue;
             if (command.Arguments.Count != commandSplit.Length - 1)
             {
+                Debug.Log("Improper syntax: '" + command.CommandSyntax() + "'");
                 break;
             }
             List<string> args = new List<string>();
@@ -100,5 +101,16 @@ public class Command
         Identifier = identifier;
         Arguments = arguments;
         CommandAction = commandAction;
+    }
+
+    public string CommandSyntax()
+    {
+        string command = Identifier;
+        foreach (string arg in Arguments)
+        {
+            command += " [" + arg + "]";
+        }
+
+        return command;
     }
 }
