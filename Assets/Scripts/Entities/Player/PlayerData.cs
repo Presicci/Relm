@@ -7,10 +7,12 @@ using UnityEngine;
 public class PlayerData
 {
     public Inventory inventory;
+    public int gold;
     
     PlayerData(Player player)
     {
         inventory = player.GetInventory();
+        gold = player.Gold;
     }
     
     

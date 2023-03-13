@@ -9,6 +9,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private Inventory _inventory;
+    public int Gold { set; get; }
 
     private void Start()
     {
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     public void LoadPlayer(PlayerData playerData)
     {
         _inventory.LoadInventory(playerData.inventory);
+        Gold = playerData.gold;
     }
     
     public Inventory GetInventory()
