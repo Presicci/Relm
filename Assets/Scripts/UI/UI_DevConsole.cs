@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 /// <summary>
 /// Console to allow inputting commands to support development and testing.
@@ -11,9 +12,13 @@ using UnityEngine.EventSystems;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public class UI_DevConsole : MonoBehaviour
 {
+    [SerializeField] private int historyMaxLength = 10;
+    [SerializeField] private TextMeshProUGUI historyTextMesh;
+    
+    private List<String> _commandHistory = new();
     private TMP_InputField _inputField;
-
-    private List<Command> _commands = new List<Command>
+    private RectTransform _rectTransform;
+    private List<Command> _commands = new()
     {
         new("item", new List<string> { "item id" }, args => GameManager.GetPlayer().GetInventory().AddItemToFirstAvailable(ItemDef.GetById(Convert.ToInt32(args[0])))),
         new("resizeinventory", new List<string> { "new size" }, args => GameManager.GetPlayer().GetInventory().Resize(Convert.ToInt32(args[0]))),
@@ -21,9 +26,10 @@ public class UI_DevConsole : MonoBehaviour
         new("save", new List<string>(), _ => PlayerData.Save(GameManager.GetPlayer())),
         new("load", new List<string>(), _ => GameManager.GetPlayer().LoadPlayer(PlayerData.Load()))
     };
-    
+
     private void Awake()
     {
+        _rectTransform = GetComponent<RectTransform>();
         _inputField = GetComponent<TMP_InputField>();
     }
 
@@ -69,6 +75,28 @@ public class UI_DevConsole : MonoBehaviour
         _inputField.ActivateInputField();
     }
 
+    private void PrintHistory()
+    {
+        string historyString = "";
+        foreach (String command in _commandHistory)
+        {
+            historyString += command + "<br>";
+        }
+
+        historyTextMesh.text = historyString;
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_rectTransform);    // This is done to ensure Layout Groups calculate properly
+    }
+
+    private void RecordCommand(string cmd)
+    {
+        if (_commandHistory.Count >= historyMaxLength)
+        {
+            _commandHistory.RemoveAt(0);
+        }
+        _commandHistory.Add(cmd);
+        PrintHistory();
+    }
+
     private bool ParseCommand(string cmd)
     {
         string[] commandSplit = cmd.Split(" ");
@@ -86,6 +114,7 @@ public class UI_DevConsole : MonoBehaviour
                 args.Add(commandSplit[index]);
             }
             command.CommandAction.Invoke(args);
+            RecordCommand(cmd);
             return true;
         }
         
