@@ -9,10 +9,8 @@ public class ChestInteractable : Interactable
     [SerializeField] private ItemDrop itemDropPrefab;
     [SerializeField] private Sprite openedSprite;
     
-    private PlayerInteraction _player;
     private SpriteRenderer _spriteRenderer;
-    private bool _opened;
-    
+
     void Start()
     {
         _spriteRenderer = transform.GetComponent<SpriteRenderer>();

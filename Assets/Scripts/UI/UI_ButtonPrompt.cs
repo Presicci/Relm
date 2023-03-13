@@ -13,7 +13,7 @@ public class UI_ButtonPrompt : MonoBehaviour
     {
         if (!gameObject.activeInHierarchy) return;
         if (_lastPlayerPos == transform.position && !forceUpdate) return;
-        transform.position = interactable.transform.position + interactable.promptOffset;
+        transform.position = interactable.transform.position + interactable.GetPromptOffset();
         forceUpdate = false;
         _lastPlayerPos = playerPosition;
     }
