@@ -6,12 +6,18 @@ using UnityEngine;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public abstract class Interactable : MonoBehaviour
 {
-    public Vector3 promptOffset;
-    protected bool interactable;
+    protected Vector3 PromptOffset = new (0, 1.3f);    // Default offset, can be overwritten
+    protected bool CanInteract = true;
+
     public abstract void Interact();
 
     public bool IsInteractable()
     {
-        return interactable;
+        return CanInteract;
+    }
+
+    public Vector3 GetPromptOffset()
+    {
+        return PromptOffset;
     }
 }

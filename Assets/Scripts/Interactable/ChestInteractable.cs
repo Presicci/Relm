@@ -13,18 +13,16 @@ public class ChestInteractable : Interactable
     private SpriteRenderer _spriteRenderer;
     private bool _opened;
     
-    void Awake()
+    void Start()
     {
         _spriteRenderer = transform.GetComponent<SpriteRenderer>();
-        promptOffset = new Vector3(0, 1.3f);
-        interactable = true;
     }
 
     public override void Interact()
     {
-        if (!interactable) return;
+        if (!CanInteract) return;
         _spriteRenderer.sprite = openedSprite;
-        interactable = false;
+        CanInteract = false;
         ItemDrop itemDrop = Instantiate(itemDropPrefab, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity);
         itemDrop.Init(ItemDef.GetById(1));  // Tempt item for now
     }
