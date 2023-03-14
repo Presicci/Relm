@@ -63,6 +63,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (col.CompareTag("Interactable"))
         {
+            Interactable interactable = col.GetComponent<Interactable>();
+            if (interactable.GetType() == typeof(ShopInteractable))
+            {
+                ((ShopInteractable) interactable).CloseShop();
+            }
             _currentInteractableTransforms.Remove(col.GetComponent<Interactable>());
             UpdateButtonPrompt();
         }
