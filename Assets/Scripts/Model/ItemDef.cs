@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -24,9 +25,10 @@ public class ItemDef
             _loadedItems.Add(item.itemName.Replace(" ", "_"), item);
         }
         Debug.Log("Loaded " + _loadedItems.Count + " items!");
+        UI_DevConsole.AddCommand(new("item", new List<string> { "item identifier" }, new List<List<string>> { _loadedItems.Keys.ToList() },args => GameManager.GetPlayer().GetInventory().AddItemToFirstAvailable(ItemDef.GetByIdentifier(args[0]))));
     }
 
-    public static Item GetByIdentifier(string identifier)
+    private static Item GetByIdentifier(string identifier)
     {
         return _loadedItems.ContainsKey(identifier) ? new Item(identifier) : null;
     }
