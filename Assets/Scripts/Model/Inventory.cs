@@ -63,6 +63,17 @@ public class Inventory
         return false;
     }
 
+    public bool AddItems(Item item, int amount)
+    {
+        if (!HasRoomFor(amount)) return false;
+        for (int i = 0; i < amount; i++)
+        {
+            AddItemToFirstAvailable(item);
+        }
+
+        return true;
+    }
+
     public bool AddItemToFirstAvailable(Item item)
     {
         int slot = GetFirstAvailableSlot();
