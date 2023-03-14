@@ -98,7 +98,6 @@ public class UI_DevConsole : MonoBehaviour
                 }
             }
         }
-        Debug.Log(similar.Count);
         suggestions.PopulateSuggestions(_inputField.text, similar);
     }
 
