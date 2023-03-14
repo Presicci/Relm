@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -15,14 +14,14 @@ public class UI_DevConsole : MonoBehaviour
 {
     [SerializeField] private int historyMaxLength = 10;
     [SerializeField] private TextMeshProUGUI historyTextMesh;
-    
-    private List<String> _commandHistory = new();
+    [SerializeField] private UI_DevConsoleSuggestion suggestions;
+
     private TMP_InputField _inputField;
     private RectTransform _rectTransform;
     private int _previousCommandCursor;
-    private List<Command> _commands = new()
+    private readonly List<string> _commandHistory = new();
+    private static readonly List<Command> Commands = new()
     {
-        new("item", new List<string> { "item id" }, args => GameManager.GetPlayer().GetInventory().AddItemToFirstAvailable(ItemDef.GetById(Convert.ToInt32(args[0])))),
         new("resizeinventory", new List<string> { "new size" }, args => GameManager.GetPlayer().GetInventory().Resize(Convert.ToInt32(args[0]))),
         new("addgold", new List<string> { "gold amount" }, args => GameManager.GetPlayer().Gold += Convert.ToInt32(args[0])),
         new("save", new List<string>(), _ => PlayerData.Save(GameManager.GetPlayer())),
@@ -47,8 +46,10 @@ public class UI_DevConsole : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
+            if (suggestions.gameObject.activeInHierarchy && suggestions.GetIndex() > 0) return;
             ProcessCommand();
             _previousCommandCursor = 0;
+            suggestions.gameObject.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.BackQuote))
         {
@@ -56,7 +57,58 @@ public class UI_DevConsole : MonoBehaviour
             _previousCommandCursor = 0;
             EventSystem.current.SetSelectedGameObject(null);
             gameObject.SetActive(false);
+            suggestions.gameObject.SetActive(false);
         }
+    }
+
+    public static void AddCommand(Command command)
+    {
+        Commands.Add(command);
+    }
+
+    public void CheckForSuggestions(string text)
+    {
+        if (text.EndsWith("\n") || text.EndsWith("\t"))
+        {
+            _inputField.text.Remove(text.Length - 1);
+        }
+        
+        string[] commandSplit = text.Split(" ");
+        List<string> similar = new List<string>();
+        if (commandSplit.Length <= 0) return;
+        if (commandSplit.Length == 1)
+        {
+            foreach (var command in Command.CommandIdentifiers)
+            {
+                if (command.StartsWith(commandSplit[0]) && !command.Equals(commandSplit[0])) similar.Add(command);
+            }
+        }
+        else
+        {
+            foreach (Command command in Commands)
+            {
+                if (!commandSplit[0].ToLower().Equals(command.Identifier)) continue;
+                if (command.Suggestions == null) break;
+                int index = commandSplit.Length - 1;
+                if (command.Suggestions.Count <= index - 1) break;
+                List<string> commandSuggestion = command.Suggestions[index - 1];
+                foreach (string suggestion in commandSuggestion)
+                {
+                    if (suggestion.StartsWith(commandSplit[index]) && !suggestion.Equals(commandSplit[index])) similar.Add(suggestion);
+                }
+            }
+        }
+        Debug.Log(similar.Count);
+        suggestions.PopulateSuggestions(_inputField.text, similar);
+    }
+
+    public void AddSuggestion(string suggestion)
+    {
+        string[] commandSplit = _inputField.text.Split(" ");
+        _inputField.text += suggestion.TrimStart(commandSplit[^1].ToCharArray()) + " ";
+        _inputField.ActivateInputField();
+        _inputField.caretPosition = _inputField.text.Length;
+        CheckForSuggestions(_inputField.text);
     }
 
     private void RemoveLastChar()
@@ -76,15 +128,7 @@ public class UI_DevConsole : MonoBehaviour
     {
         yield return 0;
         _inputField.ActivateInputField();
-    }
-
-
-    private void ProcessCommand()
-    {
-        var command = _inputField.text;
-        _inputField.SetTextWithoutNotify("");
-        ParseCommand(command);
-        _inputField.ActivateInputField();
+        CheckForSuggestions("");
     }
 
     private void PrintHistory()
@@ -124,14 +168,23 @@ public class UI_DevConsole : MonoBehaviour
         _inputField.text = _commandHistory[^--_previousCommandCursor];
         _inputField.caretPosition = _inputField.text.Length;
     }
+    
+    private void ProcessCommand()
+    {
+        var command = _inputField.text;
+        _inputField.SetTextWithoutNotify("");
+        ParseCommand(command);
+        _inputField.ActivateInputField();
+    }
 
     private bool ParseCommand(string cmd)
     {
         string[] commandSplit = cmd.Split(" ");
-        foreach (Command command in _commands)
+        foreach (Command command in Commands)
         {
             if (!commandSplit[0].ToLower().Equals(command.Identifier)) continue;
-            if (command.Arguments.Count != commandSplit.Length - 1)
+            int commandLength = commandSplit.Length - 1 - (commandSplit[^1].Equals("") ? 1 : 0);
+            if (command.Arguments.Count != commandLength)
             {
                 Debug.Log("Improper syntax: '" + command.CommandSyntax() + "'");
                 break;
@@ -139,6 +192,7 @@ public class UI_DevConsole : MonoBehaviour
             List<string> args = new List<string>();
             for (int index = 1; index < commandSplit.Length; index++)
             {
+                if (commandSplit[index].Equals("")) continue;
                 args.Add(commandSplit[index]);
             }
             command.CommandAction.Invoke(args);
@@ -155,12 +209,27 @@ public class Command
     public string Identifier;
     public Action<List<string>> CommandAction;
     public List<string> Arguments;
+    public List<List<string>> Suggestions;
+    
+    public static readonly SortedSet<string> CommandIdentifiers = new();
     
     public Command(string identifier, List<string> arguments, Action<List<string>> commandAction)
     {
         Identifier = identifier;
         Arguments = arguments;
         CommandAction = commandAction;
+        
+        CommandIdentifiers.Add(identifier);
+    }
+    
+    public Command(string identifier, List<string> arguments, List<List<string>> suggestions, Action<List<string>> commandAction)
+    {
+        Identifier = identifier;
+        Arguments = arguments;
+        Suggestions = suggestions;
+        CommandAction = commandAction;
+        
+        CommandIdentifiers.Add(identifier);
     }
 
     public string CommandSyntax()
