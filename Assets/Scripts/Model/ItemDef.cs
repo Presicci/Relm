@@ -22,7 +22,7 @@ public class ItemDef
         {
             var path = AssetDatabase.GUIDToAssetPath(name);
             var item = AssetDatabase.LoadAssetAtPath<ItemScriptableObject>(path);
-            _loadedItems.Add(item.itemName.Replace(" ", "_"), item);
+            _loadedItems.Add(item.itemName.ToLower().Replace(" ", "_"), item);
         }
         Debug.Log("Loaded " + _loadedItems.Count + " items!");
         UI_DevConsole.AddCommand(new("item", new List<string> { "item identifier" }, new List<List<string>> { _loadedItems.Keys.ToList() },args => GameManager.GetPlayer().GetInventory().AddItemToFirstAvailable(ItemDef.GetByIdentifier(args[0]))));
