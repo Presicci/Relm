@@ -8,25 +8,25 @@ using UnityEngine;
 [Serializable]
 public class Item
 {
-    private int _itemId;
+    private string _identifier;
 
-    public Item(int itemId)
+    public Item(string identifier)
     {
-        _itemId = itemId;
+        _identifier = identifier;
     }
 
     public string GetName()
     {
-        return ItemDef.GetDataById(_itemId).itemName;
+        return ItemDef.GetDataByIdentifier(_identifier).itemName;
     }
     
     public string GetDescription()
     {
-        return ItemDef.GetDataById(_itemId).itemDescription;
+        return ItemDef.GetDataByIdentifier(_identifier).itemDescription;
     }
     
     public Sprite GetSprite()
     {
-        return ItemDef.GetDataById(_itemId).sprite;
+        return ItemDef.GetDataByIdentifier(_identifier).sprite;
     }
 }
