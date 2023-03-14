@@ -37,4 +37,15 @@ public class ItemDef
     {
         return _loadedItems.ContainsKey(identifier) ? _loadedItems[identifier] : null;
     }
+    
+    public static Item GetItemByName(string name)
+    {
+        string identifier = NameToIdentifier(name);
+        return _loadedItems.ContainsKey(identifier) ? new Item(identifier) : null;
+    }
+
+    private static string NameToIdentifier(string itemName)
+    {
+        return itemName.ToLower().Replace(" ", "_");
+    }
 }
