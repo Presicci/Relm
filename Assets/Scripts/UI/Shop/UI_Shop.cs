@@ -46,7 +46,8 @@ public class UI_Shop : MonoBehaviour
     public void PurchaseItem()
     {
         if (_errorDisplayed) return;
-        int availableSpace = player.GetInventory().GetFreeSlots();
+        Item item = ItemDef.GetItemByName(_selectedItem.item.itemName);
+        int availableSpace = player.GetInventory().GetFreeSlotsFor(item);
         if (availableSpace <= 0)
         {
             StartCoroutine(ErrorMessage("Not enough space"));
@@ -64,7 +65,7 @@ public class UI_Shop : MonoBehaviour
             return;
         }
         player.Gold -= cost;
-        player.GetInventory().AddItems(ItemDef.GetItemByName(_selectedItem.item.itemName), quantity);
+        player.GetInventory().AddItem(item, quantity);
         UpdatePlayerGold();
     }
 

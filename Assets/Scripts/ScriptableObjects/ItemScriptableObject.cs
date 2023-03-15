@@ -15,4 +15,7 @@ public class ItemScriptableObject : ScriptableObject
     
     [Tooltip("Shown at the bottom of item tooltip.")]
     public string itemDescription;
+
+    [Tooltip("Does the item stack?")]
+    public bool stackable;
 }

@@ -23,7 +23,7 @@ public class PlayerPickups : MonoBehaviour
             if (!inventory.HasRoomFor(1)) return;
             if (!itemDrop.Pickup()) return;
             
-            inventory.AddItemToFirstAvailable(item);
+            inventory.AddItem(item);
         }
     }
 }

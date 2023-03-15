@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [SerializeField] private UI_Tooltip tooltip;
     [SerializeField] private Transform itemImageTransform;
     [SerializeField] private UI_ContextMenu contextMenu;
+    [SerializeField] private TextMeshProUGUI amountTextMesh;
     private int _slotIndex;
     private Image _itemImage;
     private Item _item;
@@ -39,6 +41,12 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
             RemoveItem();
             return;
         }
+
+        int amount = item.GetAmount();
+        if (amount > 1)
+        {
+            SetAmount(amount);
+        }
         _item = item;
         _itemImage.color = new Color(1, 1, 1, 0.8f);
         _itemImage.sprite = item.GetSprite();
@@ -48,6 +56,7 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public void RemoveItem()
     {
         _item = null;
+        amountTextMesh.gameObject.SetActive(false);
         _itemImage.color = new Color(1, 1, 1, 0);
         _itemImage.gameObject.SetActive(false);
     }
@@ -94,5 +103,49 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public void SetSlotIndex(int value)
     {
         _slotIndex = value;
+    }
+    
+    private void SetAmount(int amount)
+    {
+        string amt;
+        if (amount / 1_000_000_000 >= 1)
+        {
+            amt = (amount / 1_000_000_000) + "B";
+        }
+        else if (amount / 1_000_000 >= 1)
+        {
+            amt = (amount / 1_000_000) + "M";
+        }
+        else if (amount / 1_000 >= 1)
+        {
+            amt = (amount / 1_000) + "K";
+        }
+        else
+        {
+            amt = amount + "";
+        }
+        amountTextMesh.gameObject.SetActive(true);
+        amountTextMesh.text = amt;
+        ColorAmountText(amt);
+    }
+
+    private void ColorAmountText(string amount)
+    {
+        if (amount.Contains("B"))
+        {
+            amountTextMesh.color = new Color(225, 0, 255);
+        }
+        else if (amount.Contains("M"))
+        {
+            amountTextMesh.color = new Color(0, 255, 0);
+        }
+        else if (amount.Contains("K"))
+        {
+            amountTextMesh.color = new Color(255, 255, 255);
+        }
+        else
+        {
+            amountTextMesh.color = new Color(239, 255, 0);
+        }
     }
 }
