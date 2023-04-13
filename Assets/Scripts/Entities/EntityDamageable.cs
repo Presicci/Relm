@@ -1,51 +1,35 @@
-using System.Collections;
 using UnityEngine;
 
-public class EntityDamageable : MonoBehaviour
+public class EntityDamageable : Damageable
 {
     [SerializeField] public int maxHealth;
     
     public float forceMultiplier;
-
-    public int CurrentHealth { private set; get; }
-    private bool _invulnerability;
     private Rigidbody2D _rigidbody2D;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        CurrentHealth = maxHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (!col.CompareTag("PlayerWeapon") && !col.CompareTag("PlayerProjectile")) return;
-        if (_invulnerability) return;
+        bool projectile = col.CompareTag("PlayerProjectile");
+        if (!col.CompareTag("PlayerWeapon") && !projectile) return;
         Debug.Log("HIT!");
         Damage(20);
-        _rigidbody2D.AddForce(forceMultiplier * (transform.position - col.transform.position).normalized, ForceMode2D.Impulse);
+        _rigidbody2D.AddForce(forceMultiplier * (transform.position - (projectile ? col.transform.position : col.transform.parent.parent.position)).normalized, ForceMode2D.Impulse);
         if (col.CompareTag("PlayerProjectile"))
             Destroy(col.gameObject);
     }
-    
-    private void Damage(int damage)
-    {
-        if ((CurrentHealth -= damage) <= 0)
-        {
-            Die();
-        }
-        StartCoroutine(InvulnerabilityFrames());
-    }
 
-    private void Die()
+    protected override void Die()
     {
         Destroy(gameObject);
     }
-    
-    private IEnumerator InvulnerabilityFrames()
+
+    protected override void OnDamageTaken()
     {
-        _invulnerability = true;
-        yield return new WaitForSeconds(0.1f);
-        _invulnerability = false;
+        
     }
 }
