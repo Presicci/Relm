@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyDamageable : Damageable
 {
+    [SerializeField] private ExperienceOrb experienceOrb;
+    [SerializeField] private int experienceReward;
     public float forceMultiplier;
     private Rigidbody2D _rigidbody2D;
 
@@ -24,6 +26,8 @@ public class EnemyDamageable : Damageable
     protected override void Die()
     {
         Destroy(gameObject);
+        ExperienceOrb orb = Instantiate(experienceOrb, transform.position, Quaternion.identity);
+        orb.SetExperience(experienceReward);
     }
 
     protected override void OnDamageTaken()

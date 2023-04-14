@@ -10,6 +10,8 @@ TagManager:
   - InventorySlot
   - AggressiveEnemy
   - ItemDrop
+  - ExperienceOrb
+  - ExperienceVacuum
   layers:
   - Default
   - TransparentFX
