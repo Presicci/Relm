@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class EntityDamageable : Damageable
 {
-    [SerializeField] public int maxHealth;
-    
     public float forceMultiplier;
     private Rigidbody2D _rigidbody2D;
 
