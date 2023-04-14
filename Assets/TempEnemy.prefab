@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 531062006475111302}
   - component: {fileID: 2017486904734635979}
   - component: {fileID: 5340094083106938317}
-  - component: {fileID: 5340094083106938318}
   - component: {fileID: 5340094083106938319}
   - component: {fileID: -2038804780491037576}
   m_Layer: 20
@@ -210,34 +209,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   forceMultiplier: 3
---- !u!114 &5340094083106938318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531062006475111303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  drawGizmos: 1
-  detailedGizmos: 1
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  graphMask:
-    value: -1
 --- !u!58 &5340094083106938319
 CircleCollider2D:
   m_ObjectHideFlags: 0
