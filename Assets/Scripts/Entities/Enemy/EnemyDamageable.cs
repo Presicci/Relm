@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EntityDamageable : Damageable
+public class EnemyDamageable : Damageable
 {
     public float forceMultiplier;
     private Rigidbody2D _rigidbody2D;

@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class EntityHealthBar : MonoBehaviour
+public class EnemyHealthBar : MonoBehaviour
 {
     private MaterialPropertyBlock _materialPropertyBlock;
     private SpriteRenderer _spriteRenderer;
-    private EntityDamageable _entityDamageable;
+    private EnemyDamageable _entityDamageable;
     private static readonly int Fill = Shader.PropertyToID("_Fill");
 
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _entityDamageable = GetComponentInParent<EntityDamageable>();
+        _entityDamageable = GetComponentInParent<EnemyDamageable>();
         _materialPropertyBlock = new MaterialPropertyBlock();
     }
 
