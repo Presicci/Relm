@@ -79573,9 +79573,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
         type: 3}
+      propertyPath: movementSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
+        type: 3}
       propertyPath: developerConsole
       value: 
       objectReference: {fileID: 582543379}
+    - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
+        type: 3}
+      propertyPath: playerAttributes
+      value: 
+      objectReference: {fileID: 1128659576}
     - target: {fileID: 1755461081, guid: 3c424ea7a4df0454ea443dfc4f29eb82, type: 3}
       propertyPath: buttonPrompt
       value: 
@@ -79590,7 +79600,7 @@ PrefabInstance:
       objectReference: {fileID: 2112118698}
     - target: {fileID: 2069340849, guid: 3c424ea7a4df0454ea443dfc4f29eb82, type: 3}
       propertyPath: attackSpeed
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2069340849, guid: 3c424ea7a4df0454ea443dfc4f29eb82, type: 3}
       propertyPath: mouseControl

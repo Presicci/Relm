@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject developerConsole;
     [SerializeField] private float movementSpeed;
     
+    private PlayerAttributes _playerAttributes;
     private Animator _animator;
     private Rigidbody2D _rigidbody2D;
 
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _playerAttributes = GetComponent<PlayerAttributes>();
     }
 
     void Update()
@@ -61,6 +63,6 @@ public class PlayerController : MonoBehaviour
         dir.Normalize();
         _animator.SetBool("IsMoving", dir.magnitude > 0);
 
-        _rigidbody2D.velocity = movementSpeed * dir;
+        _rigidbody2D.velocity = (movementSpeed * _playerAttributes.GetAttributeValue(AttributeType.MovementSpeed)) * dir;
     }
 }
