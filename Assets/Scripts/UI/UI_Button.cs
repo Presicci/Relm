@@ -41,7 +41,6 @@ public class UI_Button : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         _image.sprite = clickSprite;
         transform.position = _homePos - new Vector3(0, 3f, 0);
-        buttonEvent.Invoke();
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -49,6 +48,7 @@ public class UI_Button : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         if (!_hovered) return;
         _image.sprite = hoverSprite;
         transform.position = _homePos;
+        buttonEvent.Invoke();
     }
 
     [Serializable]
