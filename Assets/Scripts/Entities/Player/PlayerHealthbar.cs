@@ -8,12 +8,10 @@ public class PlayerHealthbar : MonoBehaviour
     [SerializeField] private RectTransform healthBar;
     [SerializeField] private TextMeshProUGUI healthBarText;
     private PlayerDamageable _playerDamageable;
-    private float _barWidth;
 
     private void Start()
     {
         _playerDamageable = transform.GetComponent<PlayerDamageable>();
-        _barWidth = healthBar.rect.width;
     }
 
     private void Update()
