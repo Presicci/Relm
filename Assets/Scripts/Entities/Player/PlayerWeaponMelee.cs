@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /// <summary>
@@ -11,7 +12,8 @@ public class PlayerWeaponMelee : PlayerWeapon
     [SerializeField] private Transform weaponIdle;
     [SerializeField] private bool mouseControl;
     [SerializeField] private float attackSpeed = 300f;
-    
+    [SerializeField] private PlayerAttributes playerAttributes;
+
     private bool _attacking;
     private Vector3 _direction = Vector3.zero;
     private int _lastDirection;
@@ -69,7 +71,7 @@ public class PlayerWeaponMelee : PlayerWeapon
     {
         Vector3 pos = new Vector3 ( 
             _startPosition.x + (_animCounter / 90f), 
-            _startPosition.y - (Mathf.Sin(Mathf.PI * 2 * _animCounter / 360) / 1.3f),
+            _startPosition.y - (Mathf.Sin(Mathf.PI * 2 * _animCounter / 360) / Math.Max(0.2f, 1.3f / playerAttributes.GetAttributeValue(AttributeType.Range))),
             _startPosition.z
         );
         Vector3 rot = new Vector3(
@@ -79,7 +81,7 @@ public class PlayerWeaponMelee : PlayerWeapon
         );
         transform.localPosition = Vector3.Lerp( transform.position, pos, 1f);
         transform.localEulerAngles = Vector3.Lerp(transform.eulerAngles, rot, 1f);
-        _animCounter += attackSpeed * Time.deltaTime;
+        _animCounter += (attackSpeed * playerAttributes.GetAttributeValue(AttributeType.AttackSpeed)) * Time.deltaTime;
         if (_animCounter >= 180)
         {
             _trailRenderer.emitting = false;
