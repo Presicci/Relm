@@ -16,8 +16,9 @@ public class EnemyDamageable : Damageable
     {
         bool projectile = col.CompareTag("PlayerProjectile");
         if (!col.CompareTag("PlayerWeapon") && !projectile) return;
-        Debug.Log("HIT!");
-        Damage(20);
+        PlayerWeaponDamage playerWeaponDamage = col.GetComponent<PlayerWeaponDamage>();
+        if (playerWeaponDamage == null) return;
+        Damage(playerWeaponDamage.GetDamage());
         _rigidbody2D.AddForce(forceMultiplier * (transform.position - (projectile ? col.transform.position : col.transform.parent.parent.position)).normalized, ForceMode2D.Impulse);
         if (col.CompareTag("PlayerProjectile"))
             Destroy(col.gameObject);

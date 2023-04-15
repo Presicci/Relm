@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ced728ed3a9e845adf5824c964d285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 40
+  maxHealth: 55
   experienceOrb: {fileID: 6308203706037998144, guid: 0fb5829e8ae20b64d9c8c362ec498933,
     type: 3}
   experienceReward: 5
