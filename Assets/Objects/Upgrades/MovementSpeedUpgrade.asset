@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: Movement Speed<br>+5%
   upgradeAttribute: 1
+  attributeClass: 1
   increase: 0.05

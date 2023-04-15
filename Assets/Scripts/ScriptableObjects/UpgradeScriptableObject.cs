@@ -9,5 +9,6 @@ public class UpgradeScriptableObject : ScriptableObject
 {
     public string upgradeName;
     public AttributeType upgradeAttribute;
+    public AttributeClass attributeClass;
     public float increase;
 }
