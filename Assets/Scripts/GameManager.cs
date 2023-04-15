@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
         // Loads all ItemScriptableObjects into a dictionary for referencing
         ItemDef.LoadItems();
         UpgradeDef.LoadUpgrades();
+
+        Time.timeScale = 1f;
     }
 
     public static Player GetPlayer()
