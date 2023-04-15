@@ -16,7 +16,9 @@ public class PlayerDamageable : Damageable
     {
         if (_invulnerability) return;
         if (!col.transform.CompareTag("AggressiveEnemy")) return;
-        Damage(20);
+        EnemyDumbAI enemy = col.transform.GetComponent<EnemyDumbAI>();
+        if (enemy == null) return;
+        Damage(enemy.damage);
     }
 
     protected override void Die()
