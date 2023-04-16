@@ -17,18 +17,18 @@ public class UI_UpgradeSelect : MonoBehaviour
     
     public void GenerateChoices()
     {
-        List<UpgradeScriptableObject> possibleUpgrades = new List<UpgradeScriptableObject>(UpgradeDef.LoadedUpgrades);
-        if (possibleUpgrades.Count < 3)
+        List<UpgradeScriptableObject> possibleOffensive = new List<UpgradeScriptableObject>(UpgradeDef.LoadedOffensiveUpgrades);
+        List<UpgradeScriptableObject> possibleDefensive = new List<UpgradeScriptableObject>(UpgradeDef.LoadedDefensiveUpgrades);
+        List<UpgradeScriptableObject> possibleUtility = new List<UpgradeScriptableObject>(UpgradeDef.LoadedUtilityUpgrades);
+        if (possibleUtility.Count < 1 || possibleDefensive.Count < 1 || possibleOffensive.Count < 1)
         {
             Debug.LogError("ERROR: Not enough upgrades possible.");
             return;
         }
         Time.timeScale = 0f;
-        _leftUpgrade = possibleUpgrades[Random.Range(0, possibleUpgrades.Count)];
-        possibleUpgrades.Remove(_leftUpgrade); 
-        _middleUpgrade = possibleUpgrades[Random.Range(0, possibleUpgrades.Count)];
-        possibleUpgrades.Remove(_middleUpgrade);
-        _rightUpgrade = possibleUpgrades[Random.Range(0, possibleUpgrades.Count)];
+        _leftUpgrade = possibleOffensive[Random.Range(0, possibleOffensive.Count)];
+        _middleUpgrade = possibleDefensive[Random.Range(0, possibleDefensive.Count)];
+        _rightUpgrade = possibleUtility[Random.Range(0, possibleUtility.Count)];
         leftText.text = _leftUpgrade.upgradeName;
         middleText.text = _middleUpgrade.upgradeName;
         rightText.text = _rightUpgrade.upgradeName;
