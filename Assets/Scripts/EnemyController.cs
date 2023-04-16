@@ -33,6 +33,10 @@ public class EnemyController : MonoBehaviour
                 _activeEnemies.Remove(enemy);
                 return;
             }
+            if (player.transform.position.x < enemy.transform.position.x)
+                enemy.Flip(false);
+            else
+                enemy.Flip(true);
             enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, player.transform.position, enemy.GetMoveSpeed() * Time.deltaTime);
         }
     }
