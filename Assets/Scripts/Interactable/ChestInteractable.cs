@@ -9,6 +9,7 @@ public class ChestInteractable : Interactable
 {
     [SerializeField] private ItemDrop itemDropPrefab;
     [SerializeField] private Sprite openedSprite;
+    [SerializeField] private UI_UpgradeSelect upgradeSelect;
     
     private SpriteRenderer _spriteRenderer;
     private LootTable _lootTable;
@@ -24,7 +25,8 @@ public class ChestInteractable : Interactable
         if (!CanInteract) return;
         _spriteRenderer.sprite = openedSprite;
         CanInteract = false;
-        ItemDrop itemDrop = Instantiate(itemDropPrefab, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity);
-        itemDrop.Init(_lootTable.Roll());
+        upgradeSelect.GenerateChoices();
+        //ItemDrop itemDrop = Instantiate(itemDropPrefab, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity);
+        //itemDrop.Init(_lootTable.Roll());
     }
 }
