@@ -24,11 +24,16 @@ public class GameManager : MonoBehaviour
         ItemDef.LoadItems();
         UpgradeDef.LoadUpgrades();
 
-        Time.timeScale = 1f;
+        SetTimescale(1f);
     }
 
     public static Player GetPlayer()
     {
         return Instance.player;
+    }
+
+    public void SetTimescale(float value)
+    {
+        Time.timeScale = value;
     }
 }

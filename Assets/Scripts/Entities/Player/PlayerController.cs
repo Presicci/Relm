@@ -8,6 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private GameObject developerConsole;
+    [SerializeField] private GameObject pauseMenu;
     [SerializeField] private float movementSpeed;
     
     private PlayerAttributes _playerAttributes;
@@ -32,6 +33,12 @@ public class PlayerController : MonoBehaviour
         if (GameInput.KeyDownCheck(KeyCode.BackQuote))
         {
             developerConsole.SetActive(true);
+        }
+
+        if (GameInput.KeyDownCheck(KeyCode.Escape))
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
