@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] private EnemyDumbAI tier1Enemy;
+    [SerializeField] private EnemyDumbAI tier1Enemy2;
     [SerializeField] private EnemyDumbAI tier2Enemy;
     [SerializeField] private EnemyDumbAI tier3Enemy;
     [SerializeField] private EnemyDumbAI tier4Enemy;
@@ -43,17 +44,17 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator SpawnEnemies()
     {
-        List<EnemyDumbAI> possibleEnemies = new List<EnemyDumbAI> { tier1Enemy };
+        List<EnemyDumbAI> possibleEnemies = new List<EnemyDumbAI> { tier1Enemy, tier1Enemy2 };
         while (true)
         {
             yield return new WaitForSeconds(0.25f);
             if (possibleEnemies.Count == 1 && _timer.GetTime() >= 60f)
             {
                 possibleEnemies.Add(tier2Enemy);
-            } else if (possibleEnemies.Count == 1 && _timer.GetTime() >= 180f)
+            } else if (possibleEnemies.Count == 2 && _timer.GetTime() >= 180f)
             {
                 possibleEnemies.Add(tier3Enemy);
-            } else if (possibleEnemies.Count == 2 && _timer.GetTime() >= 300f)
+            } else if (possibleEnemies.Count == 3 && _timer.GetTime() >= 300f)
             {
                 possibleEnemies.Add(tier4Enemy);
             }
