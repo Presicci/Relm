@@ -1,21 +1,34 @@
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEngine;
 
 public class UpgradeDef
 {
-    public static List<UpgradeScriptableObject> LoadedUpgrades;
+    public static List<UpgradeScriptableObject> LoadedOffensiveUpgrades;
+    public static List<UpgradeScriptableObject> LoadedDefensiveUpgrades;
+    public static List<UpgradeScriptableObject> LoadedUtilityUpgrades;
     
     public static void LoadUpgrades()
     {
-        LoadedUpgrades = new List<UpgradeScriptableObject>();
+        LoadedOffensiveUpgrades = new List<UpgradeScriptableObject>();
+        LoadedDefensiveUpgrades = new List<UpgradeScriptableObject>();
+        LoadedUtilityUpgrades = new List<UpgradeScriptableObject>();
         string[] assetNames = AssetDatabase.FindAssets("t:" + typeof(UpgradeScriptableObject));
         foreach (var name in assetNames)
         {
             var path = AssetDatabase.GUIDToAssetPath(name);
             var upgrade = AssetDatabase.LoadAssetAtPath<UpgradeScriptableObject>(path);
-            LoadedUpgrades.Add(upgrade);
+            switch (upgrade.attributeClass)
+            {
+                case AttributeClass.Utility:
+                    LoadedUtilityUpgrades.Add(upgrade);
+                    break;
+                case AttributeClass.Defensive:
+                    LoadedDefensiveUpgrades.Add(upgrade);
+                    break;
+                default:
+                    LoadedOffensiveUpgrades.Add(upgrade);
+                    break;
+            }
         }
-        Debug.Log("Loaded " + LoadedUpgrades.Count + " upgrades!");
     }
 }

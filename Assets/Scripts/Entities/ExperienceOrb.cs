@@ -10,13 +10,19 @@ public class ExperienceOrb : MonoBehaviour
     {
         _experienceReward = experience;
     }
+
+    public void Activate(PlayerExperience target)
+    {
+        _target = target;
+        _activated = true;
+    }
     
-    private void OnTriggerEnter2D(Collider2D col)
+    /*private void OnTriggerEnter2D(Collider2D col)
     {
         if (!col.CompareTag("ExperienceVacuum")) return;
         _activated = true;
         _target = col.transform.parent.GetComponent<PlayerExperience>();
-    }
+    }*/
 
     private void Update()
     {

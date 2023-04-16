@@ -1,4 +1,4 @@
 public enum AttributeType
 {
-    AttackSpeed, MovementSpeed, Damage, Range
+    AttackSpeed, MovementSpeed, Damage, Range, PickupRange
 }
