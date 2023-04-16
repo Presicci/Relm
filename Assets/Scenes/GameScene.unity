@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81bdbc99c7667747b8cbefba46667e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: {fileID: 102900000, guid: e7e7900e0dcd3fc47be276fe66155275, type: 3}
+  targetScene: 1
 --- !u!4 &92469923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: 9fb66d8c9d3b5194a82e9eed65a54afb,
@@ -66215,7 +66215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81bdbc99c7667747b8cbefba46667e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: {fileID: 102900000, guid: 562c6f8a5461ab1408e95aed6c488954, type: 3}
+  targetScene: 0
 --- !u!114 &906438057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71649,7 +71649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81bdbc99c7667747b8cbefba46667e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: {fileID: 102900000, guid: 562c6f8a5461ab1408e95aed6c488954, type: 3}
+  targetScene: 0
 --- !u!1001 &1387608714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78599,11 +78599,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tier1Enemy: {fileID: -2038804780491037576, guid: 94271f3b1f825bf449a8814ae28741ac,
     type: 3}
-  tier2Enemy: {fileID: -2038804780491037576, guid: 698efa4ce2ceca748b934928cccdcf71,
+  tier1Enemy2: {fileID: -2038804780491037576, guid: 7c92badb222cdb94c93197eb932d9059,
     type: 3}
-  tier3Enemy: {fileID: -2038804780491037576, guid: 9ebca705f3a8c6d47a8064e0a61267ba,
+  tier2Enemy: {fileID: -2038804780491037576, guid: c396804669bd568408f9c80e84f6301c,
     type: 3}
-  tier4Enemy: {fileID: 0}
+  tier3Enemy: {fileID: -2038804780491037576, guid: 698efa4ce2ceca748b934928cccdcf71,
+    type: 3}
+  tier4Enemy: {fileID: -2038804780491037576, guid: 9ebca705f3a8c6d47a8064e0a61267ba,
+    type: 3}
   tilemapRenderer: {fileID: 151825650}
   player: {fileID: 1128659553}
 --- !u!114 &2047382968
@@ -80638,7 +80641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2069340849, guid: 3c424ea7a4df0454ea443dfc4f29eb82, type: 3}
       propertyPath: mouseControl
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2069340849, guid: 3c424ea7a4df0454ea443dfc4f29eb82, type: 3}
       propertyPath: playerTransform
