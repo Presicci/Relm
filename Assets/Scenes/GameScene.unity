@@ -72791,7 +72791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8903d114c43be84584f50cd6b212c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 50
+  baseDamage: 30
   playerAttributes: {fileID: 1128659576}
 --- !u!4 &1576809118 stripped
 Transform:
@@ -77758,6 +77758,7 @@ MonoBehaviour:
     type: 3}
   tier3Enemy: {fileID: -2038804780491037576, guid: 9ebca705f3a8c6d47a8064e0a61267ba,
     type: 3}
+  tier4Enemy: {fileID: 0}
   tilemapRenderer: {fileID: 151825650}
   player: {fileID: 1128659553}
 --- !u!114 &2047382968

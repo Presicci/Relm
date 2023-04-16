@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -11,6 +10,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private EnemyDumbAI tier1Enemy;
     [SerializeField] private EnemyDumbAI tier2Enemy;
     [SerializeField] private EnemyDumbAI tier3Enemy;
+    [SerializeField] private EnemyDumbAI tier4Enemy;
     [SerializeField] private TilemapRenderer tilemapRenderer;
     [SerializeField] private Player player;
     
@@ -43,12 +43,15 @@ public class EnemyController : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0.25f);
-            if (possibleEnemies.Count == 1 && _timer.GetTime() >= 180f)
+            if (possibleEnemies.Count == 1 && _timer.GetTime() >= 60f)
             {
                 possibleEnemies.Add(tier2Enemy);
-            } else if (possibleEnemies.Count == 2 && _timer.GetTime() >= 300f)
+            } else if (possibleEnemies.Count == 1 && _timer.GetTime() >= 180f)
             {
                 possibleEnemies.Add(tier3Enemy);
+            } else if (possibleEnemies.Count == 2 && _timer.GetTime() >= 300f)
+            {
+                possibleEnemies.Add(tier4Enemy);
             }
             int spawnAmount = (int) (_timer.GetTime() / 300) + 1;
             for (int index = 0; index < spawnAmount; index++)
