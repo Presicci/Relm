@@ -17,14 +17,12 @@ public class ItemDef
     public static void LoadItems()
     {
         _loadedItems = new Dictionary<string, ItemScriptableObject>();
-        string[] assetNames = AssetDatabase.FindAssets("t:" + typeof(ItemScriptableObject));
-        foreach (var name in assetNames)
+        ItemScriptableObject[] items = Resources.LoadAll<ItemScriptableObject>("Items");
+        foreach (var item in items)
         {
-            var path = AssetDatabase.GUIDToAssetPath(name);
-            var item = AssetDatabase.LoadAssetAtPath<ItemScriptableObject>(path);
             _loadedItems.Add(item.itemName.ToLower().Replace(" ", "_"), item);
         }
-        Debug.Log("Loaded " + _loadedItems.Count + " items!");
+        Debug.LogError("Loaded " + _loadedItems.Count + " items!");
         UI_DevConsole.AddCommand(new("item", new List<string> { "item identifier" }, new List<List<string>> { _loadedItems.Keys.ToList() },args => GameManager.GetPlayer().GetInventory().AddItem(ItemDef.GetByIdentifier(args[0]))));
     }
 
