@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
-  m_Name: Test Stackable Item
+  m_Script: {fileID: 11500000, guid: d69e60b33e85e744baa5cde8ccbc8eff, type: 3}
+  m_Name: WeaponSizeUpgrade
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 56b6d779582183d49878dc21bb5496bf, type: 3}
-  itemName: Test Stackable
-  itemDescription: This item should stack.
-  stackable: 1
+  upgradeName: Weapon Size<br>+10%
+  upgradeAttribute: 5
+  attributeClass: 0
+  increase: 0.1

@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using UnityEditor;
+using UnityEngine;
 
 public class UpgradeDef
 {
@@ -12,11 +12,10 @@ public class UpgradeDef
         LoadedOffensiveUpgrades = new List<UpgradeScriptableObject>();
         LoadedDefensiveUpgrades = new List<UpgradeScriptableObject>();
         LoadedUtilityUpgrades = new List<UpgradeScriptableObject>();
-        string[] assetNames = AssetDatabase.FindAssets("t:" + typeof(UpgradeScriptableObject));
-        foreach (var name in assetNames)
+        UpgradeScriptableObject[] upgrades = Resources.LoadAll<UpgradeScriptableObject>("Upgrades");
+        Debug.LogError("Loaded " + upgrades.Length + " upgrades");
+        foreach (var upgrade in upgrades)
         {
-            var path = AssetDatabase.GUIDToAssetPath(name);
-            var upgrade = AssetDatabase.LoadAssetAtPath<UpgradeScriptableObject>(path);
             switch (upgrade.attributeClass)
             {
                 case AttributeClass.Utility:
