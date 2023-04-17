@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour
             if (enemy.IsDestroyed())
             {
                 _activeEnemies.Remove(enemy);
-                return;
+                continue;
             }
             if (player.transform.position.x < enemy.transform.position.x)
                 enemy.Flip(false);
