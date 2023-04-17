@@ -9,7 +9,7 @@ public class GameTimer : MonoBehaviour
 
     private void Update()
     {
-        _time += Time.deltaTime;
+        _time += Time.deltaTime * ((_time/300) + 1);
         var displayTimer = Math.Truncate(_time);
         var seconds = Math.Truncate(displayTimer % 60);
         timeText.text = (int) (displayTimer/60) + ":" + (seconds == 0 ? "00" : seconds < 10 ? "0" + seconds : seconds);
