@@ -36,7 +36,8 @@ public class EnemyController : MonoBehaviour
                 continue;
             }
             enemy.Flip(!(player.transform.position.x < enemy.transform.position.x));
-            enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, player.transform.position, enemy.GetMoveSpeed() * Time.deltaTime);
+            enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, player.transform.position, 
+                (enemy.GetMoveSpeed() * ((_timer.GetTime()/900) + 1f)) * Time.deltaTime);
         }
         foreach (var enemy in removedEnemies)
         {
@@ -69,6 +70,7 @@ public class EnemyController : MonoBehaviour
                     offset = Random.insideUnitCircle.normalized * 9f;
                 }
                 EnemyDumbAI enemy = Instantiate(possibleEnemies[Random.Range(0, possibleEnemies.Count)], player.transform.position + offset, Quaternion.identity);
+                enemy.GetComponent<EnemyDamageable>().IncreaseMaxHealth((_timer.GetTime()/900) + 1f);
                 _activeEnemies.Add(enemy);
             }
         }

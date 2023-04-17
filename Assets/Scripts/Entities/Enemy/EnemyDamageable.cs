@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyDamageable : Damageable
@@ -34,5 +35,17 @@ public class EnemyDamageable : Damageable
     protected override void OnDamageTaken()
     {
         
+    }
+
+    public void SetMaxHealth(int value)
+    {
+        maxHealth = value;
+        CurrentHealth = value;
+    }
+
+    public void IncreaseMaxHealth(float multiplier)
+    {
+        maxHealth = (int) Math.Floor(multiplier * maxHealth);
+        CurrentHealth = maxHealth;
     }
 }

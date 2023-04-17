@@ -3,7 +3,7 @@ using UnityEngine;
 public abstract class Damageable : MonoBehaviour
 {
     [SerializeField] public int maxHealth;
-    public int CurrentHealth { private set; get; }
+    public int CurrentHealth { protected set; get; }
 
     private void Awake()
     {
