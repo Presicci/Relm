@@ -27,18 +27,20 @@ public class EnemyController : MonoBehaviour
     private void Update()
     {
         if (_activeEnemies.Count <= 0) return;
+        List<EnemyDumbAI> removedEnemies = new List<EnemyDumbAI>();
         foreach (var enemy in _activeEnemies)
         {
             if (enemy.IsDestroyed())
             {
-                _activeEnemies.Remove(enemy);
+                removedEnemies.Add(enemy);
                 continue;
             }
-            if (player.transform.position.x < enemy.transform.position.x)
-                enemy.Flip(false);
-            else
-                enemy.Flip(true);
+            enemy.Flip(!(player.transform.position.x < enemy.transform.position.x));
             enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, player.transform.position, enemy.GetMoveSpeed() * Time.deltaTime);
+        }
+        foreach (var enemy in removedEnemies)
+        {
+            _activeEnemies.Remove(enemy);
         }
     }
 
