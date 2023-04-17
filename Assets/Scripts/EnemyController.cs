@@ -48,17 +48,17 @@ public class EnemyController : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0.25f);
-            if (possibleEnemies.Count == 1 && _timer.GetTime() >= 60f)
+            if (possibleEnemies.Count == 2 && _timer.GetTime() >= 60f)
             {
                 possibleEnemies.Add(tier2Enemy);
-            } else if (possibleEnemies.Count == 2 && _timer.GetTime() >= 180f)
+            } else if (possibleEnemies.Count == 3 && _timer.GetTime() >= 180f)
             {
                 possibleEnemies.Add(tier3Enemy);
-            } else if (possibleEnemies.Count == 3 && _timer.GetTime() >= 300f)
+            } else if (possibleEnemies.Count == 4 && _timer.GetTime() >= 300f)
             {
                 possibleEnemies.Add(tier4Enemy);
             }
-            int spawnAmount = (int) (_timer.GetTime() / 300) + 1;
+            int spawnAmount = (int) (_timer.GetTime() / 180) + 1;
             for (int index = 0; index < spawnAmount; index++)
             {
                 Vector3 offset = Random.insideUnitCircle.normalized * 9f;
