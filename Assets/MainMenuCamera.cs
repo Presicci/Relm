@@ -9,6 +9,7 @@ public class MainMenuCamera : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
         transform.position = cameraPositions[_count].position;
         _count++;
     }
