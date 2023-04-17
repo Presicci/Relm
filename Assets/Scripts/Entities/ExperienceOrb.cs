@@ -17,12 +17,12 @@ public class ExperienceOrb : MonoBehaviour
         _activated = true;
     }
     
-    /*private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         if (!col.CompareTag("ExperienceVacuum")) return;
         _activated = true;
         _target = col.transform.parent.GetComponent<PlayerExperience>();
-    }*/
+    }
 
     private void Update()
     {

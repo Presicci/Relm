@@ -1,19 +1,27 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class ExperienceVacuum : MonoBehaviour
 {
     [SerializeField] private PlayerAttributes playerAttributes;
-    private PlayerExperience _playerExperience;
+    //private PlayerExperience _playerExperience;
     public float radius;
+    private CircleCollider2D _collider;
     
     private void Start()
     {
-        _playerExperience = GetComponent<PlayerExperience>();
-        StartCoroutine(CheckPickup());
+        _collider = GetComponent<CircleCollider2D>();
+        //_playerExperience = GetComponent<PlayerExperience>();
+        //StartCoroutine(CheckPickup());
     }
 
-    private IEnumerator CheckPickup()
+    private void FixedUpdate()
+    {
+        _collider.radius = playerAttributes.GetAttributeValue(AttributeType.PickupRange);
+    }
+
+    /*private IEnumerator CheckPickup()
     {
         while (true)
         {
@@ -27,7 +35,7 @@ public class ExperienceVacuum : MonoBehaviour
                     orb.Activate(_playerExperience);
             }
         }
-    }
+    }*/
 
     private void OnDrawGizmosSelected()
     {
