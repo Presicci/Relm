@@ -13,7 +13,7 @@ public class UpgradeDef
         LoadedDefensiveUpgrades = new List<UpgradeScriptableObject>();
         LoadedUtilityUpgrades = new List<UpgradeScriptableObject>();
         UpgradeScriptableObject[] upgrades = Resources.LoadAll<UpgradeScriptableObject>("Upgrades");
-        Debug.LogError("Loaded " + upgrades.Length + " upgrades");
+        Debug.Log("Loaded " + upgrades.Length + " upgrades");
         foreach (var upgrade in upgrades)
         {
             switch (upgrade.attributeClass)

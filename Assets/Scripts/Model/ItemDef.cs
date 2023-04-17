@@ -22,7 +22,7 @@ public class ItemDef
         {
             _loadedItems.Add(item.itemName.ToLower().Replace(" ", "_"), item);
         }
-        Debug.LogError("Loaded " + _loadedItems.Count + " items!");
+        Debug.Log("Loaded " + _loadedItems.Count + " items!");
         UI_DevConsole.AddCommand(new("item", new List<string> { "item identifier" }, new List<List<string>> { _loadedItems.Keys.ToList() },args => GameManager.GetPlayer().GetInventory().AddItem(ItemDef.GetByIdentifier(args[0]))));
     }
 
