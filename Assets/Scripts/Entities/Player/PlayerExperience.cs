@@ -65,6 +65,14 @@ public class PlayerExperience : MonoBehaviour
         experienceFill.fillAmount = GetFill();
     }
 
+    public void SetLevel(int value)
+    {
+        _level = value - 1;
+        _experience = GetExperienceForLevel(value - 1);
+        playerLevelText.text = "" + (_level + 1);
+        experienceFill.fillAmount = GetFill();
+    }
+
     public void ForceLevelUp()
     {
         _level++;
