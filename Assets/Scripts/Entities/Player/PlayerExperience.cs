@@ -60,7 +60,15 @@ public class PlayerExperience : MonoBehaviour
     private void LevelUp()
     {
         _level++;
-        Debug.Log("Level up! " + _level);
+        playerLevelText.text = "" + (_level + 1);
+        upgradeSelect.GenerateChoices();
+        experienceFill.fillAmount = GetFill();
+    }
+
+    public void ForceLevelUp()
+    {
+        _level++;
+        _experience = GetExperienceForLevel(_level);
         playerLevelText.text = "" + (_level + 1);
         upgradeSelect.GenerateChoices();
         experienceFill.fillAmount = GetFill();
