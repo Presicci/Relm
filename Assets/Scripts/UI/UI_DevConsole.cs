@@ -24,6 +24,8 @@ public class UI_DevConsole : MonoBehaviour
     {
         new("resizeinventory", new List<string> { "new size" }, args => GameManager.GetPlayer().GetInventory().Resize(Convert.ToInt32(args[0]))),
         new("addgold", new List<string> { "gold amount" }, args => GameManager.GetPlayer().Gold += Convert.ToInt32(args[0])),
+        new("setplayer", new List<string> { "attribute type", "attribute value" }, new List<List<string>> { new(Enum.GetNames(typeof(AttributeType))) },
+            args => GameManager.GetPlayer().GetComponent<PlayerAttributes>().SetAttributeValue((AttributeType) Enum.Parse(typeof(AttributeType), args[0]), (float) Convert.ToDouble(args[1]))),
         new("levelup", new List<string>(), args => GameManager.GetPlayer().GetComponent<PlayerExperience>().ForceLevelUp()),
         new("save", new List<string>(), _ => PlayerData.Save(GameManager.GetPlayer())),
         new("load", new List<string>(), _ => GameManager.GetPlayer().LoadPlayer(PlayerData.Load()))

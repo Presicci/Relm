@@ -23,7 +23,11 @@ public class PlayerAttributes : MonoBehaviour
         public void IncrementAttribute(AttributeType type, float value)
         {
                 _attributes[type] += value;
-                Debug.Log(type + " upgraded by " + value + " to " + _attributes[type]);
+        }
+
+        public void SetAttributeValue(AttributeType type, float value)
+        {
+                _attributes[type] = value;
         }
 }
 
