@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69e60b33e85e744baa5cde8ccbc8eff, type: 3}
   m_Name: PickupRangeUpgrade
   m_EditorClassIdentifier: 
-  upgradeName: Pickup Range<br>+50%
+  upgradeDescription: Pickup Range<br>+50%
   upgradeAttribute: 4
   attributeClass: 2
   increase: 0.5

@@ -29,9 +29,9 @@ public class UI_UpgradeSelect : MonoBehaviour
         possibleOffensive.Remove(_leftUpgrade);
         _middleUpgrade = possibleOffensive[Random.Range(0, possibleOffensive.Count)];
         _rightUpgrade = possibleUtility[Random.Range(0, possibleUtility.Count)];
-        leftText.text = _leftUpgrade.upgradeName;
-        middleText.text = _middleUpgrade.upgradeName;
-        rightText.text = _rightUpgrade.upgradeName;
+        leftText.text = _leftUpgrade.upgradeDescription;
+        middleText.text = _middleUpgrade.upgradeDescription;
+        rightText.text = _rightUpgrade.upgradeDescription;
         gameObject.SetActive(true);
     }
 

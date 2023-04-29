@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69e60b33e85e744baa5cde8ccbc8eff, type: 3}
   m_Name: AttackSpeedUpgrade
   m_EditorClassIdentifier: 
-  upgradeName: Attack Speed<br>+5%
-  upgradeAttribute: {fileID: 11400000, guid: f8b2e458eeb066442814e9bc34feda58, type: 2}
+  upgradeDescription: Attack Speed<br>+5%
+  upgradeAttribute: 0
+  attributeClass: 0
   increase: 0.05

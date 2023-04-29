@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Upgrade")]
 public class UpgradeScriptableObject : ScriptableObject
 {
-    public string upgradeName;
+    public string upgradeDescription;
     public AttributeType upgradeAttribute;
     public AttributeClass attributeClass;
     public float increase;
