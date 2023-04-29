@@ -16,3 +16,15 @@ MonoBehaviour:
   itemName: Test Item
   itemDescription: An item for testing. An item for testing. An item for testing.
     An item for testing. An item for testing.
+  stackable: 0
+  affixes:
+  - attribute: 0
+    valueMultiplier: 1.05
+  - attribute: 1
+    valueMultiplier: 1.22
+  - attribute: 2
+    valueMultiplier: 1.01
+  - attribute: 3
+    valueMultiplier: 1.1
+  - attribute: 4
+    valueMultiplier: 2

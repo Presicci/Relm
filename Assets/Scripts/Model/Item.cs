@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -51,6 +52,11 @@ public class Item
     public string GetDescription()
     {
         return ItemDef.GetDataByIdentifier(_identifier).itemDescription;
+    }
+
+    public List<ItemAffix> GetAffixes()
+    {
+        return ItemDef.GetDataByIdentifier(_identifier).affixes;
     }
     
     public Sprite GetSprite()

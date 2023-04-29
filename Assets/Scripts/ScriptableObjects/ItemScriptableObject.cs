@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -18,4 +19,7 @@ public class ItemScriptableObject : ScriptableObject
 
     [Tooltip("Does the item stack?")]
     public bool stackable;
+
+    [Tooltip("How the item modifies the player's stats.")] 
+    public List<ItemAffix> affixes;
 }
