@@ -78,7 +78,8 @@ public class UI_DevConsole : MonoBehaviour
     {
         if (text.EndsWith("\n") || text.EndsWith("\t"))
         {
-            _inputField.text.Remove(text.Length - 1);
+            _inputField.text = _inputField.text.Replace("\n", "");
+            _inputField.text = _inputField.text.Replace("\t", "");
         }
         
         string[] commandSplit = text.Split(" ");
@@ -112,7 +113,7 @@ public class UI_DevConsole : MonoBehaviour
     public void AddSuggestion(string suggestion)
     {
         string[] commandSplit = _inputField.text.Split(" ");
-        _inputField.text += suggestion.TrimStart(commandSplit[^1].ToCharArray()) + " ";
+        _inputField.text += suggestion.Substring(commandSplit[^1].Length) + " ";
         _inputField.ActivateInputField();
         _inputField.caretPosition = _inputField.text.Length;
         CheckForSuggestions(_inputField.text);
