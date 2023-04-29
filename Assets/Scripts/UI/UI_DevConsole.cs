@@ -28,11 +28,12 @@ public class UI_DevConsole : MonoBehaviour
             args => GameManager.GetPlayer().GetComponent<PlayerAttributes>().SetAttributeValue((AttributeType) Enum.Parse(typeof(AttributeType), args[0]), (float) Convert.ToDouble(args[1]))),
         new("levelup", new List<string>(), args => GameManager.GetPlayer().GetComponent<PlayerExperience>().ForceLevelUp()),
         new("setlevel", new List<string> { "level" }, args => GameManager.GetPlayer().GetComponent<PlayerExperience>().SetLevel(Convert.ToInt32(args[0]))),
+        new ("god", new List<string>(), _ => GameManager.GetPlayer().GetComponent<PlayerDamageable>().ToggleGodMode()),
         new("save", new List<string>(), _ => PlayerData.Save(GameManager.GetPlayer())),
         new("load", new List<string>(), _ => GameManager.GetPlayer().LoadPlayer(PlayerData.Load())),
         new("pause", new List<string>(), _ => Time.timeScale = 0f),
         new("unpause", new List<string>(), _ => Time.timeScale = 1f),
-        new("setspeed", new List<string>() { "game speed" }, args => Time.timeScale = (float) Convert.ToDouble(args[0])),
+        new("setspeed", new List<string> { "game speed" }, args => Time.timeScale = (float) Convert.ToDouble(args[0])),
     };
 
     private void Awake()

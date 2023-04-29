@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -47,5 +48,25 @@ public class PlayerDamageable : Damageable
         }
         _spriteRenderer.color = Color.white;
         _invulnerability = false;
+    }
+
+    public void ToggleGodMode()
+    {
+        if (maxHealth == int.MaxValue)
+        {
+            maxHealth = 100;
+            CurrentHealth = maxHealth;
+        }
+        else
+        {
+            maxHealth = int.MaxValue;
+            CurrentHealth = maxHealth;
+        }
+    }
+
+    public void SetHealth(int value)
+    {
+        maxHealth = value;
+        CurrentHealth = value;
     }
 }
