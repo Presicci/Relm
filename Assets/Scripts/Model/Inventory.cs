@@ -181,7 +181,6 @@ public class Inventory
     private void OnMoveEvent(int originalSlot, int newSlot)
     {
         (_items[originalSlot], _items[newSlot]) = (_items[newSlot], _items[originalSlot]);
-        Debug.Log(ToString());
     }
 
     public override string ToString()
