@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class UI_RibbonButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
 {
     [SerializeField] private GameObject controlledObject;
+    [SerializeField] private ButtonEvent buttonEvent;
     private Image _image;
 
     private void Awake()
@@ -32,6 +33,8 @@ public class UI_RibbonButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        controlledObject.SetActive(!controlledObject.activeInHierarchy);
+        if (controlledObject != null)
+            controlledObject.SetActive(!controlledObject.activeInHierarchy);
+        buttonEvent?.Invoke();
     }
 }
