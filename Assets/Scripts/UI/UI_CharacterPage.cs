@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class UI_CharacterPage : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void TogglePage()
     {
-        
+        if (gameObject.activeInHierarchy)
+            ClosePage();
+        else
+            OpenPage();
+    }
+    
+    private void OpenPage()
+    {
+        gameObject.SetActive(true);
+        Time.timeScale = 0f;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ClosePage()
     {
-        
+        gameObject.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
