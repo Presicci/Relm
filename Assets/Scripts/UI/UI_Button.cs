@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -13,7 +11,7 @@ public class UI_Button : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     [SerializeField] private Sprite sprite;
     [SerializeField] private Sprite hoverSprite;
     [SerializeField] private Sprite clickSprite;
-    [SerializeField] private ButtonEvent buttonEvent = new ButtonEvent();
+    [SerializeField] private ButtonEvent buttonEvent;
     private Image _image;
     private bool _hovered;
     private Vector3 _homePos;
@@ -50,7 +48,4 @@ public class UI_Button : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         transform.position = _homePos;
         buttonEvent.Invoke();
     }
-
-    [Serializable]
-    public class ButtonEvent : UnityEvent { }
 }
