@@ -17,6 +17,12 @@ public class ItemScriptableObject : ScriptableObject
     [Tooltip("Shown at the bottom of item tooltip.")]
     public string itemDescription;
 
+    [Tooltip("What kind of item is it?")]
+    public ItemType itemType;
+    
+    [Tooltip("If armor or weapon, which slot does the item equip to?")]
+    public EquipSlot equipSlot;
+
     [Tooltip("Does the item stack?")]
     public bool stackable;
 

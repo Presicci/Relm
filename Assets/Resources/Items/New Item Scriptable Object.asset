@@ -15,3 +15,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: d54a9728519c5d54bbe09aff5bd95284, type: 3}
   itemName: Another test item
   itemDescription: Another item for testing.
+  itemType: 2
+  equipSlot: 6
+  stackable: 0
+  affixes: []

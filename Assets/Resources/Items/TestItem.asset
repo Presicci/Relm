@@ -16,6 +16,8 @@ MonoBehaviour:
   itemName: Test Item
   itemDescription: An item for testing. An item for testing. An item for testing.
     An item for testing. An item for testing.
+  itemType: 2
+  equipSlot: 6
   stackable: 0
   affixes:
   - attribute: 0
