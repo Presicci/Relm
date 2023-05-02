@@ -89087,6 +89087,16 @@ PrefabInstance:
       objectReference: {fileID: 2031026036}
     - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
         type: 3}
+      propertyPath: statsMenu
+      value: 
+      objectReference: {fileID: 1640059030}
+    - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
+        type: 3}
+      propertyPath: characterPage
+      value: 
+      objectReference: {fileID: 890072220}
+    - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
+        type: 3}
       propertyPath: movementSpeed
       value: 2
       objectReference: {fileID: 0}

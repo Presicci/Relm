@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private GameObject developerConsole;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject statsMenu;
+    [SerializeField] private UI_CharacterPage characterPage;
     [SerializeField] private float movementSpeed;
     
     private PlayerAttributes _playerAttributes;
@@ -34,11 +36,19 @@ public class PlayerController : MonoBehaviour
         {
             developerConsole.SetActive(true);
         }
-
         if (GameInput.KeyDownCheck(KeyCode.Escape))
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0f;
+        }
+        if (GameInput.KeyDownCheck(KeyCode.B))
+        {
+            characterPage.TogglePage();
+        }
+
+        if (GameInput.KeyDownCheck(KeyCode.C))
+        {
+            statsMenu.gameObject.SetActive(!statsMenu.activeInHierarchy);
         }
     }
 
