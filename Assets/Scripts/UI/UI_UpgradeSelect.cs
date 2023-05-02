@@ -1,37 +1,50 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class UI_UpgradeSelect : MonoBehaviour
 {
     [SerializeField] private PlayerAttributes playerAttributes;
-    [SerializeField] private TextMeshProUGUI leftText;
-    [SerializeField] private TextMeshProUGUI middleText;
-    [SerializeField] private TextMeshProUGUI rightText;
-    
-    private UpgradeScriptableObject _leftUpgrade;
-    private UpgradeScriptableObject _middleUpgrade;
-    private UpgradeScriptableObject _rightUpgrade;
+    [SerializeField] private UI_UpgradeSelectButton buttonPrefab;
+    [SerializeField] private Transform buttonContainer;
+    [SerializeField] private int offensiveUpgrades;
+    [SerializeField] private int defensiveUpgrades;
+    [SerializeField] private int utilityUpgrades;
     private bool _locked;
     
     public void GenerateChoices()
     {
-        List<UpgradeScriptableObject> possibleOffensive = new List<UpgradeScriptableObject>(UpgradeDef.LoadedOffensiveUpgrades);
-        List<UpgradeScriptableObject> possibleUtility = new List<UpgradeScriptableObject>(UpgradeDef.LoadedUtilityUpgrades);
-        if (possibleUtility.Count < 1 || possibleOffensive.Count < 1)
+        foreach (GameObject child in buttonContainer)
         {
-            Debug.LogError("ERROR: Not enough upgrades possible.");
-            return;
+            Destroy(child);
+        }
+        List<UpgradeScriptableObject> possibleOffensive = new List<UpgradeScriptableObject>(UpgradeDef.LoadedOffensiveUpgrades);
+        List<UpgradeScriptableObject> possibleDefensive= new List<UpgradeScriptableObject>(UpgradeDef.LoadedDefensiveUpgrades);
+        List<UpgradeScriptableObject> possibleUtility = new List<UpgradeScriptableObject>(UpgradeDef.LoadedUtilityUpgrades);
+        for (int index = 0; index < Math.Min(offensiveUpgrades, possibleOffensive.Count); index++)
+        {
+            UI_UpgradeSelectButton button = Instantiate(buttonPrefab, buttonContainer);
+            UpgradeScriptableObject upgrade = possibleOffensive[Random.Range(0, possibleOffensive.Count)];
+            button.SetupButton(upgrade, this);
+            possibleOffensive.Remove(upgrade);
+        }
+        for (int index = 0; index < Math.Min(defensiveUpgrades, possibleDefensive.Count); index++)
+        {
+            UI_UpgradeSelectButton button = Instantiate(buttonPrefab, buttonContainer);
+            UpgradeScriptableObject upgrade = possibleDefensive[Random.Range(0, possibleDefensive.Count)];
+            button.SetupButton(upgrade, this);
+            possibleDefensive.Remove(upgrade);
+        }
+        for (int index = 0; index < Math.Min(utilityUpgrades, possibleUtility.Count); index++)
+        {
+            UI_UpgradeSelectButton button = Instantiate(buttonPrefab, buttonContainer);
+            UpgradeScriptableObject upgrade = possibleUtility[Random.Range(0, possibleUtility.Count)];
+            button.SetupButton(upgrade, this);
+            possibleUtility.Remove(upgrade);
         }
         Time.timeScale = 0f;
-        _leftUpgrade = possibleOffensive[Random.Range(0, possibleOffensive.Count)];
-        possibleOffensive.Remove(_leftUpgrade);
-        _middleUpgrade = possibleOffensive[Random.Range(0, possibleOffensive.Count)];
-        _rightUpgrade = possibleUtility[Random.Range(0, possibleUtility.Count)];
-        leftText.text = _leftUpgrade.upgradeDescription;
-        middleText.text = _middleUpgrade.upgradeDescription;
-        rightText.text = _rightUpgrade.upgradeDescription;
         gameObject.SetActive(true);
     }
 
@@ -51,24 +64,10 @@ public class UI_UpgradeSelect : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void TakeLeftUpgrade()
+    public void TakeUpgrade(UpgradeScriptableObject upgrade)
     {
         if (_locked) return;
-        playerAttributes.IncrementAttribute(_leftUpgrade.upgradeAttribute, _leftUpgrade.increase);
-        Close();
-    }
-    
-    public void TakeMiddleUpgrade()
-    {
-        if (_locked) return;
-        playerAttributes.IncrementAttribute(_middleUpgrade.upgradeAttribute, _middleUpgrade.increase);
-        Close();
-    }
-    
-    public void TakeRightUpgrade()
-    {
-        if (_locked) return;
-        playerAttributes.IncrementAttribute(_rightUpgrade.upgradeAttribute, _rightUpgrade.increase);
+        playerAttributes.IncrementAttribute(upgrade.upgradeAttribute, upgrade.increase);
         Close();
     }
 }
