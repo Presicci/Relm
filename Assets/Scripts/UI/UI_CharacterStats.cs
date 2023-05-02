@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -19,6 +20,21 @@ public class UI_CharacterStats : MonoBehaviour
         foreach (var child in _children)
         {
             child.UpdateValue(playerAttributes);
+        }
+        StartCoroutine(Refresh());
+    }
+
+    private IEnumerator Refresh()
+    {
+        while (gameObject.activeInHierarchy)
+        {
+            yield return new WaitForSeconds(1);
+            Debug.Log("refresh");
+            _children ??= statsContainer.GetComponentsInChildren<UI_CharacterStatsElement>();
+            foreach (var child in _children)
+            {
+                child.UpdateValue(playerAttributes);
+            }
         }
     }
 }
