@@ -8,6 +8,6 @@ public class UI_CharacterStatsElement : MonoBehaviour
 
     public void UpdateValue(PlayerAttributes playerAttributes)
     {
-        valueTextMesh.SetText(playerAttributes.GetAttributeValue(attributeType) + "x");
+        valueTextMesh.SetText(playerAttributes.GetAttributeValue(attributeType) + (attributeType is AttributeType.Defense or AttributeType.HealthRegen ? "" : "x"));
     }
 }

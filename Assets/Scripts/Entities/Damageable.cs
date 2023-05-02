@@ -10,9 +10,15 @@ public abstract class Damageable : MonoBehaviour
         CurrentHealth = maxHealth;
     }
 
+    protected virtual int GetDefense()
+    {
+        return 0;
+    }
+
     protected void Damage(int damage)
     {
-        if ((CurrentHealth -= damage) <= 0)
+        int finalDamage = damage - GetDefense();
+        if ((CurrentHealth -= finalDamage) <= 0)
         {
             Die();
         }

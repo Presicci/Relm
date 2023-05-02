@@ -6,11 +6,14 @@ public class PlayerDamageable : Damageable
 {
     [SerializeField] private GameObject gameOverScreen;
     private SpriteRenderer _spriteRenderer;
+    private PlayerAttributes _playerAttributes;
     private bool _invulnerability;
 
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _playerAttributes = GetComponent<PlayerAttributes>();
+        StartCoroutine(RegenHealth());
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -26,6 +29,23 @@ public class PlayerDamageable : Damageable
     {
         Time.timeScale = 0f;
         gameOverScreen.SetActive(true);
+    }
+
+    private IEnumerator RegenHealth()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5f);
+            var newHealth = CurrentHealth + (int)_playerAttributes.GetAttributeValue(AttributeType.HealthRegen);
+            if (newHealth > maxHealth)
+                newHealth = maxHealth;
+            CurrentHealth = newHealth;
+        }    
+    }
+    
+    protected override int GetDefense()
+    {
+        return (int) _playerAttributes.GetAttributeValue(AttributeType.Defense);
     }
 
     protected override void OnDamageTaken()

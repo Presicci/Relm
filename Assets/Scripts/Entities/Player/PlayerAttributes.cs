@@ -11,7 +11,10 @@ public class PlayerAttributes : MonoBehaviour
                 _attributes = new Dictionary<AttributeType, float>();
                 foreach (AttributeType attribute in Enum.GetValues(typeof(AttributeType)))
                 {
-                        _attributes.Add(attribute, 1f);
+                        if (attribute is AttributeType.Defense or AttributeType.HealthRegen)
+                                _attributes.Add(attribute, 0);
+                        else 
+                                _attributes.Add(attribute, 1f);
                 }
         }
 

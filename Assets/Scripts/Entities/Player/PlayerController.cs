@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject developerConsole;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject statsMenu;
-    [SerializeField] private UI_CharacterPage characterPage;
+    [SerializeField] private GameObject characterPage;
     [SerializeField] private float movementSpeed;
     
     private PlayerAttributes _playerAttributes;
@@ -38,18 +38,33 @@ public class PlayerController : MonoBehaviour
         }
         if (GameInput.KeyDownCheck(KeyCode.Escape))
         {
-            pauseMenu.SetActive(true);
-            Time.timeScale = 0f;
+            var active = pauseMenu.activeInHierarchy;
+            pauseMenu.SetActive(!active);
+            Time.timeScale = active ? (characterPage.activeInHierarchy ? 0f: 1f) : 0f;
         }
         if (GameInput.KeyDownCheck(KeyCode.B))
         {
-            characterPage.TogglePage();
+            ToggleCharacterPage();
         }
 
         if (GameInput.KeyDownCheck(KeyCode.C))
         {
             statsMenu.gameObject.SetActive(!statsMenu.activeInHierarchy);
         }
+    }
+
+    public void ToggleCharacterPage()
+    {
+        var active = characterPage.activeInHierarchy;
+        characterPage.SetActive(!active);
+        Time.timeScale = active ? (pauseMenu.activeInHierarchy ? 0f : 1f) : 0f;
+    }
+    
+    public void ContinueGame()
+    {
+        if (pauseMenu.activeInHierarchy) return;
+        if (characterPage.activeInHierarchy) return;
+        Time.timeScale = 1f;
     }
 
     private void HandleMovement()
