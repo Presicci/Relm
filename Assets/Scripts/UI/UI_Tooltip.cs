@@ -36,15 +36,27 @@ public class UI_Tooltip : MonoBehaviour
         transform.position = Input.mousePosition + _positionOffset;
     }
 
+    public void ActiveTooltip(string text)
+    {
+        gameObject.SetActive(true);
+        transform.position = Input.mousePosition + _positionOffset;
+        _itemNameTextMesh.SetText(text);
+        _itemDescriptionTextMesh.gameObject.SetActive(false);
+        _itemStatsTextMesh.gameObject.SetActive(false);
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_rectTransform);    // This is done to ensure Layout Groups calculate properly
+    }
+
     public void ActivateItemTooltip(Item item)
     {
         gameObject.SetActive(true);
         transform.position = Input.mousePosition + _positionOffset;
         _itemNameTextMesh.SetText(item.GetName());
         _itemDescriptionTextMesh.SetText(item.GetDescription());
+        _itemDescriptionTextMesh.gameObject.SetActive(item.GetDescription() != "");
         var itemAffixes = item.GetAffixes();
         var affixString = itemAffixes.Aggregate("", (current, affix) => current + ("+" + Math.Round((affix.valueMultiplier * 100) - 100) + "% " + affix.attribute.HumanName() + "<br>"));
         _itemStatsTextMesh.SetText(affixString);
+        _itemStatsTextMesh.gameObject.SetActive(itemAffixes.Count > 0);
         LayoutRebuilder.ForceRebuildLayoutImmediate(_rectTransform);    // This is done to ensure Layout Groups calculate properly
     }
 
