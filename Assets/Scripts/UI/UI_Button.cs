@@ -19,7 +19,6 @@ public class UI_Button : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     private void Awake()
     {
         _image = GetComponent<Image>();
-        _homePos = transform.position;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -37,6 +36,7 @@ public class UI_Button : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        _homePos = transform.position;
         _image.sprite = clickSprite;
         transform.position = _homePos - new Vector3(0, 3f, 0);
     }
