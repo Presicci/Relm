@@ -6,11 +6,13 @@ public class PlayerDamageable : Damageable
 {
     [SerializeField] private GameObject gameOverScreen;
     private SpriteRenderer _spriteRenderer;
+    private PlayerAttributes _playerAttributes;
     private bool _invulnerability;
 
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _playerAttributes = GetComponent<PlayerAttributes>();
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -26,6 +28,12 @@ public class PlayerDamageable : Damageable
     {
         Time.timeScale = 0f;
         gameOverScreen.SetActive(true);
+    }
+    
+    protected override int GetDefense()
+    {
+        Debug.Log(_playerAttributes.GetAttributeValue(AttributeType.Defense) + " " + (int) _playerAttributes.GetAttributeValue(AttributeType.Defense));
+        return (int) _playerAttributes.GetAttributeValue(AttributeType.Defense);
     }
 
     protected override void OnDamageTaken()
