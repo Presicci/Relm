@@ -13,6 +13,7 @@ public class PlayerDamageable : Damageable
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _playerAttributes = GetComponent<PlayerAttributes>();
+        StartCoroutine(RegenHealth());
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -29,10 +30,21 @@ public class PlayerDamageable : Damageable
         Time.timeScale = 0f;
         gameOverScreen.SetActive(true);
     }
+
+    private IEnumerator RegenHealth()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5f);
+            var newHealth = CurrentHealth + (int)_playerAttributes.GetAttributeValue(AttributeType.HealthRegen);
+            if (newHealth > maxHealth)
+                newHealth = maxHealth;
+            CurrentHealth = newHealth;
+        }    
+    }
     
     protected override int GetDefense()
     {
-        Debug.Log(_playerAttributes.GetAttributeValue(AttributeType.Defense) + " " + (int) _playerAttributes.GetAttributeValue(AttributeType.Defense));
         return (int) _playerAttributes.GetAttributeValue(AttributeType.Defense);
     }
 
