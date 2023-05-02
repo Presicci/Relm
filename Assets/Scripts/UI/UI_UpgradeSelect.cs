@@ -16,9 +16,9 @@ public class UI_UpgradeSelect : MonoBehaviour
     
     public void GenerateChoices()
     {
-        foreach (GameObject child in buttonContainer)
+        foreach (Transform child in buttonContainer)
         {
-            Destroy(child);
+            Destroy(child.gameObject);
         }
         List<UpgradeScriptableObject> possibleOffensive = new List<UpgradeScriptableObject>(UpgradeDef.LoadedOffensiveUpgrades);
         List<UpgradeScriptableObject> possibleDefensive= new List<UpgradeScriptableObject>(UpgradeDef.LoadedDefensiveUpgrades);
