@@ -7,6 +7,8 @@ public class SettingsScreen : MonoBehaviour
 {
     public Toggle fullscreenTog, vsyncTog;
 
+    public List<ResItem> resolutions = new List<ResItems>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,4 +42,10 @@ public class SettingsScreen : MonoBehaviour
             QualitySettings.vSyncCount = 0;
         }
     }
+}
+
+[System.Serializable]
+public class ResItem
+{
+    public int horizontal, vertical;
 }
