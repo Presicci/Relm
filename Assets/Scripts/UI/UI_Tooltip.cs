@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -54,7 +55,12 @@ public class UI_Tooltip : MonoBehaviour
         _itemDescriptionTextMesh.SetText(item.GetDescription());
         _itemDescriptionTextMesh.gameObject.SetActive(item.GetDescription() != "");
         var itemAffixes = item.GetAffixes();
-        var affixString = itemAffixes.Aggregate("", (current, affix) => current + ("+" + Math.Round((affix.valueMultiplier * 100) - 100) + "% " + affix.attribute.HumanName() + "<br>"));
+        var affixString = itemAffixes.Aggregate("", (current, affix) =>
+        {
+            string humanName = Regex.Replace(affix.attribute.ToString(), "([a-z])([A-Z])", "$1 $2");
+            return current + ("+" + Math.Round((affix.valueMultiplier * 100) - 100) + "% " + humanName +
+                              "<br>");
+        });
         _itemStatsTextMesh.SetText(affixString);
         _itemStatsTextMesh.gameObject.SetActive(itemAffixes.Count > 0);
         LayoutRebuilder.ForceRebuildLayoutImmediate(_rectTransform);    // This is done to ensure Layout Groups calculate properly
