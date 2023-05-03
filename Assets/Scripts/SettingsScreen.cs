@@ -81,10 +81,9 @@ public class SettingsScreen : MonoBehaviour
 
     public void ResLeft()
     {
-        selectedResolution--;
+        --selectedResolution;
         if(selectedResolution < 0)
         {
-            //selectedResolution--;
             selectedResolution = 0;
         }
 
@@ -93,11 +92,10 @@ public class SettingsScreen : MonoBehaviour
 
     public void ResRight()
     {
-        selectedResolution++;
-        if(selectedResolution > resolutions.Count)
+        ++selectedResolution;
+        if(selectedResolution > resolutions.Count - 1)
         {
-            //selectedResolution++;
-            selectedResolution = resolutions.Count;
+            selectedResolution = resolutions.Count - 1;
         }
 
         UpdateResLabel();
@@ -110,8 +108,6 @@ public class SettingsScreen : MonoBehaviour
 
     public void Apply()
     {
-        //Screen.fullScreen = fullscreenTog.isOn;
-
         if(vsyncTog.isOn)
         {
             QualitySettings.vSyncCount = 1;
