@@ -7,7 +7,7 @@ public class SettingsScreen : MonoBehaviour
 {
     public Toggle fullscreenTog, vsyncTog;
 
-    public List<ResItem> resolutions = new List<ResItems>();
+    public List<ResItem> resolutions = new List<ResItem>();
 
     // Start is called before the first frame update
     void Start()
