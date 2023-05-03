@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,12 +7,19 @@ public class SceneTransition : MonoBehaviour
 {
     [SerializeField] private int targetScene;
 
-    public void LoadScene() {
-        SceneManager.LoadScene(targetScene);
+    public string firstlevel;
+
+    void Start()
+    {
+
     }
 
-    public void ExitGame()
+    void Update()
     {
-        Application.Quit();
+
+    }
+
+    public void LoadScene() {
+        SceneManager.LoadScene(targetScene);
     }
 }
