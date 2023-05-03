@@ -81,9 +81,10 @@ public class SettingsScreen : MonoBehaviour
 
     public void ResLeft()
     {
-        selectedResolution++;
+        selectedResolution--;
         if(selectedResolution < 0)
         {
+            //selectedResolution--;
             selectedResolution = 0;
         }
 
@@ -92,10 +93,11 @@ public class SettingsScreen : MonoBehaviour
 
     public void ResRight()
     {
-        selectedResolution--;
-        if(selectedResolution > resolutions.Count - 1)
+        selectedResolution++;
+        if(selectedResolution > resolutions.Count)
         {
-            selectedResolution = resolutions.Count - 1;
+            //selectedResolution++;
+            selectedResolution = resolutions.Count;
         }
 
         UpdateResLabel();
