@@ -25,8 +25,8 @@ public class ChestInteractable : Interactable
         if (!CanInteract) return;
         _spriteRenderer.sprite = openedSprite;
         CanInteract = false;
-        upgradeSelect.GenerateChoices();
-        //ItemDrop itemDrop = Instantiate(itemDropPrefab, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity);
-        //itemDrop.Init(_lootTable.Roll());
+        //upgradeSelect.GenerateChoices();
+        ItemDrop itemDrop = Instantiate(itemDropPrefab, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity);
+        itemDrop.Init(_lootTable.Roll());
     }
 }
