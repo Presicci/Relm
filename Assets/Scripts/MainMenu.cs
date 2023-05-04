@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,17 +6,8 @@ public class MainMenu : MonoBehaviour
     
     public string firstLevel;
 
+    [SerializeField] private GameObject mainButtons;
     public GameObject settingsScreen;
-
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
 
     public void StartGame() {
         SceneManager.LoadScene(firstLevel);
@@ -27,11 +16,13 @@ public class MainMenu : MonoBehaviour
     public void OpenSettings()
     {
         settingsScreen.SetActive(true);
+        mainButtons.SetActive(false);
     }
 
     public void CloseSettings()
     {
         settingsScreen.SetActive(false);
+        mainButtons.SetActive(true);
     }
 
     public void ExitGame()
