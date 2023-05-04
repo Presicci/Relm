@@ -89630,6 +89630,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
         type: 3}
+      propertyPath: tooltip
+      value: 
+      objectReference: {fileID: 1753972781}
+    - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
+        type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 2031026036}

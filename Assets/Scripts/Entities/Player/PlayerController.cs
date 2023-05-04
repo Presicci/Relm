@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject statsMenu;
     [SerializeField] private GameObject characterPage;
     [SerializeField] private float movementSpeed;
+    [SerializeField] private UI_Tooltip tooltip;
     
     private PlayerAttributes _playerAttributes;
     private Animator _animator;
@@ -57,6 +58,8 @@ public class PlayerController : MonoBehaviour
     {
         var active = characterPage.activeInHierarchy;
         characterPage.SetActive(!active);
+        if (active)
+            tooltip.DisableTooltip();
         Time.timeScale = active ? (pauseMenu.activeInHierarchy ? 0f : 1f) : 0f;
     }
     
