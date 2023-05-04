@@ -25,11 +25,24 @@ public class ExperienceOrb : MonoBehaviour
         if (transform.position == _target.transform.position)
         {
             _target.AddExperience(_experienceReward);
-            Destroy(gameObject);
+            expDing();
+            //Destroy(gameObject);
         }
         else
         {
             _speed += 0.03f;
         }
     }
+
+    //teleport exp orb behind the world and play the exp noise
+    private void expDing()
+    {
+        //play sound
+        GetComponent<AudioSource>().pitch = Random.Range(.8f, 1.2f);
+        GetComponent<AudioSource>().Play();
+        //move orb behind screen
+        transform.position = new Vector3(0, 0, -100);
+        Destroy(gameObject, 3);
+    }
+
 }
