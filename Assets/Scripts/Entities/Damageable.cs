@@ -18,6 +18,8 @@ public abstract class Damageable : MonoBehaviour
     protected void Damage(int damage)
     {
         int finalDamage = damage - GetDefense();
+        if (finalDamage < 0)
+            finalDamage = 0;
         if ((CurrentHealth -= finalDamage) <= 0)
         {
             Die();
