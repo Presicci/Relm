@@ -65,9 +65,11 @@ public class EnemyController : MonoBehaviour
             for (int index = 0; index < spawnAmount; index++)
             {
                 Vector3 offset = Random.insideUnitCircle.normalized * 9f;
+                var tries = 0;
                 while (!tilemapRenderer.bounds.Contains(player.transform.position + offset))
                 {
                     offset = Random.insideUnitCircle.normalized * 9f;
+                    if (tries++ > 15) break;
                 }
                 EnemyDumbAI enemy = Instantiate(possibleEnemies[Random.Range(0, possibleEnemies.Count)], player.transform.position + offset, Quaternion.identity);
                 enemy.GetComponent<EnemyDamageable>().IncreaseMaxHealth((_timer.GetTime()/900) + 1f);
