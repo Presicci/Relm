@@ -23,21 +23,24 @@ public class UI_UpgradeSelect : MonoBehaviour
         List<UpgradeScriptableObject> possibleOffensive = new List<UpgradeScriptableObject>(UpgradeDef.LoadedOffensiveUpgrades);
         List<UpgradeScriptableObject> possibleDefensive= new List<UpgradeScriptableObject>(UpgradeDef.LoadedDefensiveUpgrades);
         List<UpgradeScriptableObject> possibleUtility = new List<UpgradeScriptableObject>(UpgradeDef.LoadedUtilityUpgrades);
-        for (int index = 0; index < Math.Min(offensiveUpgrades, possibleOffensive.Count); index++)
+        var max = Math.Min(offensiveUpgrades, possibleOffensive.Count);
+        for (int index = 0; index < max; index++)
         {
             UI_UpgradeSelectButton button = Instantiate(buttonPrefab, buttonContainer);
             UpgradeScriptableObject upgrade = possibleOffensive[Random.Range(0, possibleOffensive.Count)];
             button.SetupButton(upgrade, this);
             possibleOffensive.Remove(upgrade);
         }
-        for (int index = 0; index < Math.Min(defensiveUpgrades, possibleDefensive.Count); index++)
+        max = Math.Min(defensiveUpgrades, possibleDefensive.Count);
+        for (int index = 0; index < max; index++)
         {
             UI_UpgradeSelectButton button = Instantiate(buttonPrefab, buttonContainer);
             UpgradeScriptableObject upgrade = possibleDefensive[Random.Range(0, possibleDefensive.Count)];
             button.SetupButton(upgrade, this);
             possibleDefensive.Remove(upgrade);
         }
-        for (int index = 0; index < Math.Min(utilityUpgrades, possibleUtility.Count); index++)
+        max = Math.Min(utilityUpgrades, possibleUtility.Count);
+        for (int index = 0; index < max; index++)
         {
             UI_UpgradeSelectButton button = Instantiate(buttonPrefab, buttonContainer);
             UpgradeScriptableObject upgrade = possibleUtility[Random.Range(0, possibleUtility.Count)];
