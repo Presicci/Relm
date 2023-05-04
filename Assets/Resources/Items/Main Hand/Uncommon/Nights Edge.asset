@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
-  m_Name: Nights Edge 1
+  m_Name: Nights Edge
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: bf73fb1550f5c7a49bc79816512fe396, type: 3}
   itemName: Nights Edge
