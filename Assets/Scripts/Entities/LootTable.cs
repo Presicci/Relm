@@ -35,6 +35,7 @@ public class LootTable : MonoBehaviour
         {
             if ((roll -= lootItem.weight) <= 0)
             {
+                if (lootItem.item == null) return null; // No drop
                 Item item = ItemDef.GetItemByName(lootItem.item.itemName);
                 item.SetAmount(lootItem.amount);
                 return item;

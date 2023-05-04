@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 5340094083106938319}
   - component: {fileID: 5340094083106938317}
   - component: {fileID: -2038804780491037576}
+  - component: {fileID: 2648373491070748062}
   m_Layer: 20
   m_Name: Rat
   m_TagString: AggressiveEnemy
@@ -224,6 +225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 55
+  itemDropPrefab: {fileID: 2906822389498359280, guid: 0db68de46e723744f86f9402f62aecd7,
+    type: 3}
   experienceOrb: {fileID: 6308203706037998144, guid: 0fb5829e8ae20b64d9c8c362ec498933,
     type: 3}
   experienceReward: 10
@@ -242,6 +245,172 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1.2
   damage: 5
+--- !u!114 &2648373491070748062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531062006475111303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883a02fd7cfa4add8a6d1694471d0a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootItems:
+  - item: {fileID: 11400000, guid: a272440c7ffae4444a9b8e3698c326be, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 3b8e1bf4d6b0ba444b166c9a341771bd, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: a6d296c789dc88d40b921dfb322b4c18, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 1fca89a075aecfc4b9d14a6ec5100607, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: ef09a94c1907c304fb4be8e04ec78330, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: febbb62763f6f094ca06f0daf7ac9b18, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 11400000, guid: b8584bc61ea251b4b9fcfc14acfa1916, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 4874a419952a9294691ee84ca0093e70, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 9ad70dd8c0d686e4f93f0186d6564811, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 7082b67821f961e4781fbd9fd16a90a1, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 76ba3c5d0a31a70488b868b83199511a, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: 36a66cd904582a144b68e19f20891e6a, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 11400000, guid: 47e80346008244ac7a37b63adec410be, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 2ae50b9b4e53c44bc9e6976db1759186, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 2f1b96249814cde47a12cf6c3039f3d1, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: bc7cf567783064f09aecf2ee46873f81, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 83b0dc806da76e942af57c8c0047e08f, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: 0a0afa5032a12ad48b7abab7c38106e3, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 11400000, guid: bfd476164de4dc449803f6d5aae157e1, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: e9745c43612a0ae48a4665ad835f9ee0, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 05645220d5140724b8229d4e7b81282b, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 047e8e41fe3866c4c9295c552efa2b6d, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 842aff60700b8cc4d8d24ab360dc79e4, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: 442f644eb2d31c34285a957afd0235c9, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 11400000, guid: ed6aa26a62dc24c49bc5d1acbfaf0c2c, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: fbdc0349d0722f34f80ea2342fb22b33, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 42c3188557101154da049a3a365c69cd, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 660b7aef3fcc4ba459a7a11c0a83523f, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 6fcf2ac67ddd0614fba10787e7268a61, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: 39e4a378636377a4f90126591820b3a5, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: db377953ca09b434caeb409740cab3d8, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: ef5b7fdc8120c8c4aab64c33b0baccbc, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 8ba3d218fb3fdbc47bab7dffa1150392, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: d3303d0f260f53440b1a058c11ad100d, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: 3f2839a3cd2e33944996a4e1a27017be, type: 2}
+    amount: 1
+    weight: 5
+  - item: {fileID: 11400000, guid: aa1cac42bbbedf74b94c53c116398a53, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: ff153bbe8069b944ea31a2ba44b10e45, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 20be18c2e5422db4ea339c329b8c13b2, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 817737d366fd21b4fad7533730a06f84, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 73ef4c334f4103941aacd7ebb43648d8, type: 2}
+    amount: 1
+    weight: 3
+  - item: {fileID: 11400000, guid: 04d41def41444ae418f8b61a40f05c7c, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: 9460291a10446d94380a31a170720347, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: 57ad2b405897e9a40a8ab44be2031cfd, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: b06c9657b2c32cb47b729f18a9fee7c6, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: e54152524d713b14d9be44be1710a417, type: 2}
+    amount: 1
+    weight: 2
+  - item: {fileID: 11400000, guid: afeda6cef5deb3b4288433478637ba47, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 11400000, guid: d21b80804f9c11c4fa19c40c62006d0a, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 11400000, guid: 6248d160a87426a459baf06f240e79df, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 11400000, guid: 30d864720be1d9c428bed30c7cd3acab, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 11400000, guid: 4e04a2f878943424f95d3047ad27477e, type: 2}
+    amount: 1
+    weight: 1
+  - item: {fileID: 0}
+    amount: 1
+    weight: 25000
 --- !u!1 &1166426324102389120
 GameObject:
   m_ObjectHideFlags: 0

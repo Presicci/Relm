@@ -67715,25 +67715,307 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.size
-      value: 3
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[0].item
       value: 
-      objectReference: {fileID: 11400000, guid: 608c2fd1cb5f4ef4cb26f6817507d27a,
+      objectReference: {fileID: 11400000, guid: a272440c7ffae4444a9b8e3698c326be,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].item
       value: 
-      objectReference: {fileID: 11400000, guid: b898659e9f7382a47b9a02ccd897d4b9,
+      objectReference: {fileID: 11400000, guid: 3b8e1bf4d6b0ba444b166c9a341771bd,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[2].item
       value: 
-      objectReference: {fileID: 11400000, guid: a53be7a7f2d525244bfc4eefad32d3c6,
+      objectReference: {fileID: 11400000, guid: a6d296c789dc88d40b921dfb322b4c18,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fca89a075aecfc4b9d14a6ec5100607,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ef09a94c1907c304fb4be8e04ec78330,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].item
+      value: 
+      objectReference: {fileID: 11400000, guid: febbb62763f6f094ca06f0daf7ac9b18,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].item
+      value: 
+      objectReference: {fileID: 11400000, guid: b8584bc61ea251b4b9fcfc14acfa1916,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4874a419952a9294691ee84ca0093e70,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ad70dd8c0d686e4f93f0186d6564811,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 7082b67821f961e4781fbd9fd16a90a1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 76ba3c5d0a31a70488b868b83199511a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 36a66cd904582a144b68e19f20891e6a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 47e80346008244ac7a37b63adec410be,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ae50b9b4e53c44bc9e6976db1759186,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f1b96249814cde47a12cf6c3039f3d1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bc7cf567783064f09aecf2ee46873f81,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 83b0dc806da76e942af57c8c0047e08f,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a0afa5032a12ad48b7abab7c38106e3,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd476164de4dc449803f6d5aae157e1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].item
+      value: 
+      objectReference: {fileID: 11400000, guid: e9745c43612a0ae48a4665ad835f9ee0,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 05645220d5140724b8229d4e7b81282b,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 047e8e41fe3866c4c9295c552efa2b6d,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 842aff60700b8cc4d8d24ab360dc79e4,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 442f644eb2d31c34285a957afd0235c9,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ed6aa26a62dc24c49bc5d1acbfaf0c2c,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].item
+      value: 
+      objectReference: {fileID: 11400000, guid: fbdc0349d0722f34f80ea2342fb22b33,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 42c3188557101154da049a3a365c69cd,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 660b7aef3fcc4ba459a7a11c0a83523f,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6fcf2ac67ddd0614fba10787e7268a61,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 39e4a378636377a4f90126591820b3a5,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].item
+      value: 
+      objectReference: {fileID: 11400000, guid: db377953ca09b434caeb409740cab3d8,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ef5b7fdc8120c8c4aab64c33b0baccbc,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ba3d218fb3fdbc47bab7dffa1150392,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].item
+      value: 
+      objectReference: {fileID: 11400000, guid: d3303d0f260f53440b1a058c11ad100d,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f2839a3cd2e33944996a4e1a27017be,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].item
+      value: 
+      objectReference: {fileID: 11400000, guid: aa1cac42bbbedf74b94c53c116398a53,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ff153bbe8069b944ea31a2ba44b10e45,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 20be18c2e5422db4ea339c329b8c13b2,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 817737d366fd21b4fad7533730a06f84,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 73ef4c334f4103941aacd7ebb43648d8,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 04d41def41444ae418f8b61a40f05c7c,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9460291a10446d94380a31a170720347,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 57ad2b405897e9a40a8ab44be2031cfd,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].item
+      value: 
+      objectReference: {fileID: 11400000, guid: b06c9657b2c32cb47b729f18a9fee7c6,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].item
+      value: 
+      objectReference: {fileID: 11400000, guid: e54152524d713b14d9be44be1710a417,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].item
+      value: 
+      objectReference: {fileID: 11400000, guid: afeda6cef5deb3b4288433478637ba47,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].item
+      value: 
+      objectReference: {fileID: 11400000, guid: d21b80804f9c11c4fa19c40c62006d0a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6248d160a87426a459baf06f240e79df,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 30d864720be1d9c428bed30c7cd3acab,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e04a2f878943424f95d3047ad27477e,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
@@ -67743,17 +68025,17 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[0].weight
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].amount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].weight
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
@@ -67763,6 +68045,476 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[2].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].weight
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5785779090039501680, guid: e518f4087f89f134783717989828c3c0,
@@ -68948,25 +69700,307 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.size
-      value: 3
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[0].item
       value: 
-      objectReference: {fileID: 11400000, guid: 608c2fd1cb5f4ef4cb26f6817507d27a,
+      objectReference: {fileID: 11400000, guid: a272440c7ffae4444a9b8e3698c326be,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].item
       value: 
-      objectReference: {fileID: 11400000, guid: b898659e9f7382a47b9a02ccd897d4b9,
+      objectReference: {fileID: 11400000, guid: 3b8e1bf4d6b0ba444b166c9a341771bd,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[2].item
       value: 
-      objectReference: {fileID: 11400000, guid: a53be7a7f2d525244bfc4eefad32d3c6,
+      objectReference: {fileID: 11400000, guid: a6d296c789dc88d40b921dfb322b4c18,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fca89a075aecfc4b9d14a6ec5100607,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ef09a94c1907c304fb4be8e04ec78330,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].item
+      value: 
+      objectReference: {fileID: 11400000, guid: febbb62763f6f094ca06f0daf7ac9b18,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].item
+      value: 
+      objectReference: {fileID: 11400000, guid: b8584bc61ea251b4b9fcfc14acfa1916,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4874a419952a9294691ee84ca0093e70,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ad70dd8c0d686e4f93f0186d6564811,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 7082b67821f961e4781fbd9fd16a90a1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 76ba3c5d0a31a70488b868b83199511a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 36a66cd904582a144b68e19f20891e6a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 47e80346008244ac7a37b63adec410be,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ae50b9b4e53c44bc9e6976db1759186,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f1b96249814cde47a12cf6c3039f3d1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bc7cf567783064f09aecf2ee46873f81,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 83b0dc806da76e942af57c8c0047e08f,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a0afa5032a12ad48b7abab7c38106e3,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd476164de4dc449803f6d5aae157e1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].item
+      value: 
+      objectReference: {fileID: 11400000, guid: e9745c43612a0ae48a4665ad835f9ee0,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 05645220d5140724b8229d4e7b81282b,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 047e8e41fe3866c4c9295c552efa2b6d,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 842aff60700b8cc4d8d24ab360dc79e4,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 442f644eb2d31c34285a957afd0235c9,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ed6aa26a62dc24c49bc5d1acbfaf0c2c,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].item
+      value: 
+      objectReference: {fileID: 11400000, guid: fbdc0349d0722f34f80ea2342fb22b33,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 42c3188557101154da049a3a365c69cd,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 660b7aef3fcc4ba459a7a11c0a83523f,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6fcf2ac67ddd0614fba10787e7268a61,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 39e4a378636377a4f90126591820b3a5,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].item
+      value: 
+      objectReference: {fileID: 11400000, guid: db377953ca09b434caeb409740cab3d8,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ef5b7fdc8120c8c4aab64c33b0baccbc,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ba3d218fb3fdbc47bab7dffa1150392,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].item
+      value: 
+      objectReference: {fileID: 11400000, guid: d3303d0f260f53440b1a058c11ad100d,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f2839a3cd2e33944996a4e1a27017be,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].item
+      value: 
+      objectReference: {fileID: 11400000, guid: aa1cac42bbbedf74b94c53c116398a53,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ff153bbe8069b944ea31a2ba44b10e45,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 20be18c2e5422db4ea339c329b8c13b2,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 817737d366fd21b4fad7533730a06f84,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 73ef4c334f4103941aacd7ebb43648d8,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 04d41def41444ae418f8b61a40f05c7c,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9460291a10446d94380a31a170720347,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 57ad2b405897e9a40a8ab44be2031cfd,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].item
+      value: 
+      objectReference: {fileID: 11400000, guid: b06c9657b2c32cb47b729f18a9fee7c6,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].item
+      value: 
+      objectReference: {fileID: 11400000, guid: e54152524d713b14d9be44be1710a417,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].item
+      value: 
+      objectReference: {fileID: 11400000, guid: afeda6cef5deb3b4288433478637ba47,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].item
+      value: 
+      objectReference: {fileID: 11400000, guid: d21b80804f9c11c4fa19c40c62006d0a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6248d160a87426a459baf06f240e79df,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 30d864720be1d9c428bed30c7cd3acab,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e04a2f878943424f95d3047ad27477e,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
@@ -68976,17 +70010,17 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[0].weight
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].amount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].weight
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
@@ -68996,6 +70030,476 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[2].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].weight
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5785779090039501680, guid: e518f4087f89f134783717989828c3c0,
@@ -88525,25 +90029,307 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.size
-      value: 3
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[0].item
       value: 
-      objectReference: {fileID: 11400000, guid: 608c2fd1cb5f4ef4cb26f6817507d27a,
+      objectReference: {fileID: 11400000, guid: a272440c7ffae4444a9b8e3698c326be,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].item
       value: 
-      objectReference: {fileID: 11400000, guid: b898659e9f7382a47b9a02ccd897d4b9,
+      objectReference: {fileID: 11400000, guid: 3b8e1bf4d6b0ba444b166c9a341771bd,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[2].item
       value: 
-      objectReference: {fileID: 11400000, guid: a53be7a7f2d525244bfc4eefad32d3c6,
+      objectReference: {fileID: 11400000, guid: a6d296c789dc88d40b921dfb322b4c18,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fca89a075aecfc4b9d14a6ec5100607,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ef09a94c1907c304fb4be8e04ec78330,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].item
+      value: 
+      objectReference: {fileID: 11400000, guid: febbb62763f6f094ca06f0daf7ac9b18,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].item
+      value: 
+      objectReference: {fileID: 11400000, guid: b8584bc61ea251b4b9fcfc14acfa1916,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4874a419952a9294691ee84ca0093e70,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ad70dd8c0d686e4f93f0186d6564811,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 7082b67821f961e4781fbd9fd16a90a1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 76ba3c5d0a31a70488b868b83199511a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 36a66cd904582a144b68e19f20891e6a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 47e80346008244ac7a37b63adec410be,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ae50b9b4e53c44bc9e6976db1759186,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f1b96249814cde47a12cf6c3039f3d1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bc7cf567783064f09aecf2ee46873f81,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 83b0dc806da76e942af57c8c0047e08f,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a0afa5032a12ad48b7abab7c38106e3,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd476164de4dc449803f6d5aae157e1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].item
+      value: 
+      objectReference: {fileID: 11400000, guid: e9745c43612a0ae48a4665ad835f9ee0,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 05645220d5140724b8229d4e7b81282b,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 047e8e41fe3866c4c9295c552efa2b6d,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 842aff60700b8cc4d8d24ab360dc79e4,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 442f644eb2d31c34285a957afd0235c9,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ed6aa26a62dc24c49bc5d1acbfaf0c2c,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].item
+      value: 
+      objectReference: {fileID: 11400000, guid: fbdc0349d0722f34f80ea2342fb22b33,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 42c3188557101154da049a3a365c69cd,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 660b7aef3fcc4ba459a7a11c0a83523f,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6fcf2ac67ddd0614fba10787e7268a61,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 39e4a378636377a4f90126591820b3a5,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].item
+      value: 
+      objectReference: {fileID: 11400000, guid: db377953ca09b434caeb409740cab3d8,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ef5b7fdc8120c8c4aab64c33b0baccbc,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ba3d218fb3fdbc47bab7dffa1150392,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].item
+      value: 
+      objectReference: {fileID: 11400000, guid: d3303d0f260f53440b1a058c11ad100d,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f2839a3cd2e33944996a4e1a27017be,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].item
+      value: 
+      objectReference: {fileID: 11400000, guid: aa1cac42bbbedf74b94c53c116398a53,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ff153bbe8069b944ea31a2ba44b10e45,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 20be18c2e5422db4ea339c329b8c13b2,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 817737d366fd21b4fad7533730a06f84,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 73ef4c334f4103941aacd7ebb43648d8,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 04d41def41444ae418f8b61a40f05c7c,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9460291a10446d94380a31a170720347,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 57ad2b405897e9a40a8ab44be2031cfd,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].item
+      value: 
+      objectReference: {fileID: 11400000, guid: b06c9657b2c32cb47b729f18a9fee7c6,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].item
+      value: 
+      objectReference: {fileID: 11400000, guid: e54152524d713b14d9be44be1710a417,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].item
+      value: 
+      objectReference: {fileID: 11400000, guid: afeda6cef5deb3b4288433478637ba47,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].item
+      value: 
+      objectReference: {fileID: 11400000, guid: d21b80804f9c11c4fa19c40c62006d0a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6248d160a87426a459baf06f240e79df,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 30d864720be1d9c428bed30c7cd3acab,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e04a2f878943424f95d3047ad27477e,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
@@ -88553,17 +90339,17 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[0].weight
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].amount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].weight
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
@@ -88573,6 +90359,476 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[2].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].weight
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5785779090039501680, guid: e518f4087f89f134783717989828c3c0,
@@ -90163,23 +92419,311 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.size
-      value: 3
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[0].item
       value: 
-      objectReference: {fileID: 11400000, guid: 608c2fd1cb5f4ef4cb26f6817507d27a,
+      objectReference: {fileID: 11400000, guid: a272440c7ffae4444a9b8e3698c326be,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].item
       value: 
-      objectReference: {fileID: 11400000, guid: b898659e9f7382a47b9a02ccd897d4b9,
+      objectReference: {fileID: 11400000, guid: 3b8e1bf4d6b0ba444b166c9a341771bd,
         type: 2}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[2].item
+      value: 
+      objectReference: {fileID: 11400000, guid: a6d296c789dc88d40b921dfb322b4c18,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fca89a075aecfc4b9d14a6ec5100607,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ef09a94c1907c304fb4be8e04ec78330,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].item
+      value: 
+      objectReference: {fileID: 11400000, guid: febbb62763f6f094ca06f0daf7ac9b18,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].item
+      value: 
+      objectReference: {fileID: 11400000, guid: b8584bc61ea251b4b9fcfc14acfa1916,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4874a419952a9294691ee84ca0093e70,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ad70dd8c0d686e4f93f0186d6564811,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 7082b67821f961e4781fbd9fd16a90a1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 76ba3c5d0a31a70488b868b83199511a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 36a66cd904582a144b68e19f20891e6a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 47e80346008244ac7a37b63adec410be,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ae50b9b4e53c44bc9e6976db1759186,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f1b96249814cde47a12cf6c3039f3d1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bc7cf567783064f09aecf2ee46873f81,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 83b0dc806da76e942af57c8c0047e08f,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a0afa5032a12ad48b7abab7c38106e3,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd476164de4dc449803f6d5aae157e1,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].item
+      value: 
+      objectReference: {fileID: 11400000, guid: e9745c43612a0ae48a4665ad835f9ee0,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 05645220d5140724b8229d4e7b81282b,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 047e8e41fe3866c4c9295c552efa2b6d,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 842aff60700b8cc4d8d24ab360dc79e4,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 442f644eb2d31c34285a957afd0235c9,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ed6aa26a62dc24c49bc5d1acbfaf0c2c,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].item
+      value: 
+      objectReference: {fileID: 11400000, guid: fbdc0349d0722f34f80ea2342fb22b33,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 42c3188557101154da049a3a365c69cd,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 660b7aef3fcc4ba459a7a11c0a83523f,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6fcf2ac67ddd0614fba10787e7268a61,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 39e4a378636377a4f90126591820b3a5,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].item
+      value: 
+      objectReference: {fileID: 11400000, guid: db377953ca09b434caeb409740cab3d8,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ef5b7fdc8120c8c4aab64c33b0baccbc,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ba3d218fb3fdbc47bab7dffa1150392,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].item
+      value: 
+      objectReference: {fileID: 11400000, guid: d3303d0f260f53440b1a058c11ad100d,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f2839a3cd2e33944996a4e1a27017be,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].item
+      value: 
+      objectReference: {fileID: 11400000, guid: aa1cac42bbbedf74b94c53c116398a53,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ff153bbe8069b944ea31a2ba44b10e45,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 20be18c2e5422db4ea339c329b8c13b2,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 817737d366fd21b4fad7533730a06f84,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 73ef4c334f4103941aacd7ebb43648d8,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 04d41def41444ae418f8b61a40f05c7c,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9460291a10446d94380a31a170720347,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 57ad2b405897e9a40a8ab44be2031cfd,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].item
+      value: 
+      objectReference: {fileID: 11400000, guid: b06c9657b2c32cb47b729f18a9fee7c6,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].item
+      value: 
+      objectReference: {fileID: 11400000, guid: e54152524d713b14d9be44be1710a417,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].item
+      value: 
+      objectReference: {fileID: 11400000, guid: afeda6cef5deb3b4288433478637ba47,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].item
+      value: 
+      objectReference: {fileID: 11400000, guid: d21b80804f9c11c4fa19c40c62006d0a,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6248d160a87426a459baf06f240e79df,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 30d864720be1d9c428bed30c7cd3acab,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e04a2f878943424f95d3047ad27477e,
+        type: 2}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[50].item
       value: 
       objectReference: {fileID: 11400000, guid: a53be7a7f2d525244bfc4eefad32d3c6,
         type: 2}
@@ -90191,17 +92735,17 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[0].weight
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].amount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[1].weight
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
@@ -90211,7 +92755,487 @@ PrefabInstance:
     - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
         type: 3}
       propertyPath: lootItems.Array.data[2].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].amount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[3].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[4].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[5].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[6].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[7].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[8].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[9].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[10].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[11].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[12].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[13].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[14].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[15].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[16].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[17].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[18].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[19].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[20].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[21].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[22].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[23].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[24].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[25].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[26].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[27].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[28].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[29].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[30].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[31].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[32].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[33].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[34].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[35].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[36].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[37].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[38].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[39].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[40].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[41].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[42].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[43].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[44].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[45].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[46].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[47].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[48].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[49].weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[50].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517926980190077301, guid: e518f4087f89f134783717989828c3c0,
+        type: 3}
+      propertyPath: lootItems.Array.data[50].weight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785779090039501680, guid: e518f4087f89f134783717989828c3c0,
         type: 3}

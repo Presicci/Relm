@@ -3,14 +3,17 @@ using UnityEngine;
 
 public class EnemyDamageable : Damageable
 {
+    [SerializeField] private ItemDrop itemDropPrefab;
     [SerializeField] private ExperienceOrb experienceOrb;
     [SerializeField] private int experienceReward;
     public float forceMultiplier;
     private Rigidbody2D _rigidbody2D;
+    private LootTable _lootTable;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _lootTable = transform.GetComponent<LootTable>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -28,6 +31,12 @@ public class EnemyDamageable : Damageable
     protected override void Die()
     {
         Destroy(gameObject);
+        Item item = _lootTable.Roll();
+        if (item != null)
+        {
+            ItemDrop itemDrop = Instantiate(itemDropPrefab, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity);
+            itemDrop.Init(item);
+        }
         ExperienceOrb orb = Instantiate(experienceOrb, transform.position, Quaternion.identity);
         orb.SetExperience(experienceReward);
     }
