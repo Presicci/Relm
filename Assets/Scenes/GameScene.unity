@@ -1393,6 +1393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstLevel: 
+  mainButtons: {fileID: 0}
   settingsScreen: {fileID: 0}
 --- !u!4 &92469923 stripped
 Transform:
@@ -71935,7 +71936,7 @@ GameObject:
   - component: {fileID: 906438059}
   - component: {fileID: 906438058}
   - component: {fileID: 906438057}
-  - component: {fileID: 906438056}
+  - component: {fileID: 906438060}
   m_Layer: 5
   m_Name: Exit button
   m_TagString: Untagged
@@ -71964,20 +71965,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -63}
   m_SizeDelta: {x: 173.5, y: 72.9}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &906438056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906438054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e81bdbc99c7667747b8cbefba46667e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstLevel: 
-  settingsScreen: {fileID: 0}
 --- !u!114 &906438057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71996,16 +71983,16 @@ MonoBehaviour:
   buttonEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 906438056}
-        m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
+      - m_Target: {fileID: 906438060}
+        m_TargetAssemblyTypeName: UI_LoadScene, Assembly-CSharp
         m_MethodName: LoadScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &906438058
@@ -72046,6 +72033,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906438054}
   m_CullTransparentMesh: 1
+--- !u!114 &906438060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906438054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e3fdd16e5db5745a913358f9eb8f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910629236
 GameObject:
   m_ObjectHideFlags: 0
@@ -79493,6 +79492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstLevel: 
+  mainButtons: {fileID: 0}
   settingsScreen: {fileID: 0}
 --- !u!1001 &1387608714
 PrefabInstance:
@@ -84435,10 +84435,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
