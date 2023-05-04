@@ -68,4 +68,14 @@ public class Item
     {
         return ItemDef.GetDataByIdentifier(_identifier).stackable;
     }
+
+    public EquipSlot GetEquipSlot()
+    {
+        return ItemDef.GetDataByIdentifier(_identifier).equipSlot;
+    }
+
+    public ItemType GetItemType()
+    {
+        return ItemDef.GetDataByIdentifier(_identifier).itemType;
+    }
 }

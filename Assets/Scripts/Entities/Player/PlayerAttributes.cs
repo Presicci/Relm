@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAttributes : MonoBehaviour
 {
+        [SerializeField] private UI_Equipment equipment;
         private Dictionary<AttributeType, float> _attributes;
         
         private void Awake()
@@ -20,7 +21,11 @@ public class PlayerAttributes : MonoBehaviour
 
         public float GetAttributeValue(AttributeType type)
         {
-                return _attributes[type];
+                Dictionary<AttributeType, float> equipmentAttributes = equipment.GetAttributes();
+                if (type is AttributeType.Defense or AttributeType.HealthRegen)
+                        return _attributes[type] + (equipmentAttributes == null ? 0f : equipmentAttributes[type]);
+                else 
+                        return _attributes[type] * (equipmentAttributes == null ? 1f : equipmentAttributes[type]);
         }
 
         public void IncrementAttribute(AttributeType type, float value)

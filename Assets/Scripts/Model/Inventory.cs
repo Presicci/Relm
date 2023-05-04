@@ -36,7 +36,7 @@ public class Inventory
         OnResize.Invoke(_size);
     }
 
-    private void SetItem(Item item, int slot)
+    public void SetItem(Item item, int slot)
     {
         _items[slot] = item;
         OnAdd.Invoke(slot, item);
@@ -93,7 +93,7 @@ public class Inventory
         return true;
     }
 
-    private bool AddItemToFirstAvailable(Item item)
+    public bool AddItemToFirstAvailable(Item item)
     {
         int slot = GetFirstAvailableSlot();
         if (slot == -1)

@@ -15,6 +15,8 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [SerializeField] private Transform itemImageTransform;
     [SerializeField] private UI_ContextMenu contextMenu;
     [SerializeField] private TextMeshProUGUI amountTextMesh;
+    [SerializeField] private Player player;
+    [SerializeField] private UI_Equipment equipment;
     private int _slotIndex;
     private Image _itemImage;
     private Item _item;
@@ -87,10 +89,14 @@ public class UI_InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
             if (_item == null) return;
             contextMenu.SetupMenu(Input.mousePosition, new (string, Action)[]
             {
-                ("Equip", () => Debug.Log("Equip")),
-                ("Use", () => Debug.Log("Use")),
-                ("Inspect", () => Debug.Log("Inspect")),
-                ("Discard", () => GameManager.GetPlayer().GetInventory().RemoveFromSlot(_slotIndex))
+                ("Equip", () =>
+                {
+                    if (_item.GetEquipSlot() == EquipSlot.None) return;
+                    Item item = _item;
+                    player.GetInventory().RemoveFromSlot(_slotIndex);
+                    equipment.EquipItem(item);
+                }),
+                ("Discard", () => player.GetInventory().RemoveFromSlot(_slotIndex))
             });
         }
     }
