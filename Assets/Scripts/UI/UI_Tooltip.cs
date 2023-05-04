@@ -58,7 +58,8 @@ public class UI_Tooltip : MonoBehaviour
         var affixString = itemAffixes.Aggregate("", (current, affix) =>
         {
             string humanName = Regex.Replace(affix.attribute.ToString(), "([a-z])([A-Z])", "$1 $2");
-            return current + ("+" + Math.Round((affix.valueMultiplier * 100) - 100) + "% " + humanName +
+            return current + ((affix.valueMultiplier > 1 ? "+" : "") + 
+                              (affix.attribute is AttributeType.Defense or AttributeType.HealthRegen ? affix.valueMultiplier + " " : Math.Round((affix.valueMultiplier * 100) - 100) + "% ") + humanName +
                               "<br>");
         });
         _itemStatsTextMesh.SetText(affixString);
