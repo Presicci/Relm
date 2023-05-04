@@ -19,10 +19,16 @@ public class SettingsScreen : MonoBehaviour
     public TMP_Text mastLabel, musicLabel, sfxLabel;
     public Slider mastSlider, musicSlider, sfxSlider;
 
+    public TMP_Dropdown resolutionDropdown;
+    //public string resolutionString;
+
     // Start is called before the first frame update
     void Start()
     {
         fullscreenTog.isOn = Screen.fullScreen;
+        
+        string resolutionString;
+        int i;
 
         if (QualitySettings.vSyncCount == 0)
         {
@@ -34,15 +40,17 @@ public class SettingsScreen : MonoBehaviour
         }
 
         bool foundRes = false;
-        for(int i = 0; i < resolutions.Count; i++)
+        for(i = 0; i < resolutions.Count; i++)
         {
-            if(Screen.width == resolutions[i].horizontal && Screen.height == resolutions[i].vertical)
+            resolutionString = resolutions[i].horizontal.ToString() + " X " + resolutions[i].vertical.ToString();
+            resolutionDropdown.options.Add(new TMP_Dropdown.OptionData(resolutionString));
+
+            if (Screen.width == resolutions[i].horizontal && Screen.height == resolutions[i].vertical)
             {
                 foundRes = true;
 
-                selectedResolution = i;
-
-                UpdateResLabel();
+                resolutionDropdown.value = i;
+                resolutionDropdown.RefreshShownValue();
             }
         }
 
@@ -53,9 +61,10 @@ public class SettingsScreen : MonoBehaviour
             newRes.vertical = Screen.height;
 
             resolutions.Add(newRes);
-            selectedResolution = resolutions.Count - 1;
+            resolutionDropdown.value = resolutions.Count - 1;
 
-            UpdateResLabel();
+            resolutionString = resolutions[i].horizontal.ToString() + " X " + resolutions[i].vertical.ToString();
+            resolutionDropdown.options.Add(new TMP_Dropdown.OptionData(resolutionString));
         }
 
         float vol = 0f;
@@ -73,13 +82,7 @@ public class SettingsScreen : MonoBehaviour
         sfxLabel.text = Mathf.RoundToInt(sfxSlider.value + 80).ToString();
     }
 
-    // Update is called once per frame 
-    void Update()
-    {
-        
-    }
-
-    public void ResLeft()
+    /*public void ResRight()
     {
         --selectedResolution;
         if(selectedResolution < 0)
@@ -90,7 +93,7 @@ public class SettingsScreen : MonoBehaviour
         UpdateResLabel();
     }
 
-    public void ResRight()
+    public void ResLeft()
     {
         ++selectedResolution;
         if(selectedResolution > resolutions.Count - 1)
@@ -104,7 +107,7 @@ public class SettingsScreen : MonoBehaviour
     public void UpdateResLabel()
     {
         resolutionLabel.text = resolutions[selectedResolution].horizontal.ToString() + " X " + resolutions[selectedResolution].vertical.ToString();
-    }
+    }*/
 
     public void Apply()
     {
@@ -117,7 +120,7 @@ public class SettingsScreen : MonoBehaviour
             QualitySettings.vSyncCount = 0;
         }
 
-        Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullscreenTog.isOn);
+        Screen.SetResolution(resolutions[resolutionDropdown.value].horizontal, resolutions[resolutionDropdown.value].vertical, fullscreenTog.isOn);
     }
 
     public void SetMasterVol()
