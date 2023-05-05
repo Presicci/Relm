@@ -30,7 +30,8 @@ public class PlayerInteraction : MonoBehaviour
         if (GameInput.KeyDownCheck(KeyCode.F))
         {
             closestInteractable.Interact();
-            _currentInteractableTransforms.Remove(closestInteractable);
+            if (closestInteractable.GetType() != typeof(ShopInteractable))
+                _currentInteractableTransforms.Remove(closestInteractable);
             UpdateButtonPrompt();
         }
         buttonPrompt.UpdatePosition(closestInteractable, transform.position);
