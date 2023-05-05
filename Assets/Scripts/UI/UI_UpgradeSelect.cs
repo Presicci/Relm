@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class UI_UpgradeSelect : MonoBehaviour
 {
+    [SerializeField] private PlayerController playerController;
     [SerializeField] private PlayerAttributes playerAttributes;
     [SerializeField] private UI_UpgradeSelectButton buttonPrefab;
     [SerializeField] private Transform buttonContainer;
@@ -53,10 +54,10 @@ public class UI_UpgradeSelect : MonoBehaviour
 
     private void Close()
     {
-        _locked = true;
-        Time.timeScale = 1f;
-        _locked = false;
         gameObject.SetActive(false);
+        _locked = true;
+        playerController.ContinueGame();
+        _locked = false;
     }
 
     private IEnumerator CloseWithDelay()

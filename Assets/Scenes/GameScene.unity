@@ -73376,6 +73376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c417fd0ad252d64e8b361f63a7f784f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 4019978502800295837}
   playerAttributes: {fileID: 1128659576}
   buttonPrefab: {fileID: 1889861528}
   buttonContainer: {fileID: 210540372}
@@ -91909,6 +91910,11 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
+        type: 3}
+      propertyPath: upgradeSelect
+      value: 
+      objectReference: {fileID: 953062010}
     - target: {fileID: -5032732402949558694, guid: 3c424ea7a4df0454ea443dfc4f29eb82,
         type: 3}
       propertyPath: developerConsole

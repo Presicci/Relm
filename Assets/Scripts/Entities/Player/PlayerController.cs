@@ -7,6 +7,7 @@ using UnityEngine;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private GameObject upgradeSelect;
     [SerializeField] private GameObject developerConsole;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject statsMenu;
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
     {
         if (pauseMenu.activeInHierarchy) return;
         if (characterPage.activeInHierarchy) return;
+        if (upgradeSelect.activeInHierarchy) return;
         Time.timeScale = 1f;
     }
 
