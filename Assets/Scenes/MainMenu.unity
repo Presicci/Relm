@@ -4959,10 +4959,16 @@ MonoBehaviour:
   resolutions:
   - horizontal: 1920
     vertical: 1080
+  - horizontal: 1366
+    vertical: 768
   - horizontal: 1280
     vertical: 720
+  - horizontal: 960
+    vertical: 540
   - horizontal: 854
     vertical: 480
+  - horizontal: 640
+    vertical: 360
   resolutionLabel: {fileID: 2009749713}
   theMixer: {fileID: 24100000, guid: 170467c8731733348903ccf2bab9a173, type: 2}
   mastLabel: {fileID: 481369896}
