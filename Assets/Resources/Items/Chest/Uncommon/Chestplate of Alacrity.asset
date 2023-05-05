@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Chestplate of Alacrity
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 5d52b20f865aff242bfcb08c3b6f61a5, type: 3}
+  sprite: {fileID: 21300000, guid: 62b4a2f3dff4a9a4ba03a764d5fdd006, type: 3}
   itemName: Chestplate of Alacrity
   itemDescription: YOU CAN TAKE ON THE WORLD
   itemType: 1

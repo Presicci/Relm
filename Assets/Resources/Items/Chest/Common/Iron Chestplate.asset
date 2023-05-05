@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Iron Chestplate
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: d4a1388a0d4ee9c44bcaa86e463a7b39, type: 3}
+  sprite: {fileID: 21300000, guid: 5105fe1d825990746b9a92407ea447ca, type: 3}
   itemName: Iron Chestplate
   itemDescription: A chestplate made of iron. Exquisite.
   itemType: 1
