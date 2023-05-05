@@ -20,8 +20,8 @@ MonoBehaviour:
   stackable: 0
   affixes:
   - attribute: 0
-    valueMultiplier: 1
+    valueMultiplier: 1.1
   - attribute: 2
-    valueMultiplier: 1
+    valueMultiplier: 1.1
   - attribute: 5
-    valueMultiplier: 1
+    valueMultiplier: 1.1

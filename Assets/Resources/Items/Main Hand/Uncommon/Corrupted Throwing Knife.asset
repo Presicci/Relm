@@ -22,6 +22,6 @@ MonoBehaviour:
   - attribute: 0
     valueMultiplier: 10
   - attribute: 2
-    valueMultiplier: 1
+    valueMultiplier: 0.5
   - attribute: 1
     valueMultiplier: 3
