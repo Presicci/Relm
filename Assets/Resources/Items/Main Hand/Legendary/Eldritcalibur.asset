@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Eldritcalibur
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: d54a9728519c5d54bbe09aff5bd95284, type: 3}
+  sprite: {fileID: 21300000, guid: 158be32ff2ccad14e8831bd617f89478, type: 3}
   itemName: Eldritcalibur
   itemDescription: 
   itemType: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Diamond GreatAxe
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 2820b2e4880bb924da42e15982d02033, type: 3}
+  sprite: {fileID: 21300000, guid: c03fbd6f990a8a54680cdd21777738e1, type: 3}
   itemName: Diamond GreatAxe
   itemDescription: 
   itemType: 2

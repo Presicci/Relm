@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Iron Throwing Knife
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: d605befd4bec61449b7a5c492aaf2361, type: 3}
+  sprite: {fileID: 21300000, guid: 0d047a16ca0627f4c8781f0168dcc35a, type: 3}
   itemName: Iron Throwing Knife
   itemDescription: 
   itemType: 2

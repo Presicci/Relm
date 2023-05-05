@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Heaven's Gambit
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: b9d3d7dbf5c4f114fbe9d15c62c0f9cc, type: 3}
+  sprite: {fileID: 21300000, guid: 4ceb0a22206fea046be70ad00381bf62, type: 3}
   itemName: Heaven's Gambit
   itemDescription: 
   itemType: 2
