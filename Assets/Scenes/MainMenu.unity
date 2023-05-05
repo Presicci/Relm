@@ -4090,7 +4090,7 @@ GameObject:
   - component: {fileID: 446712750}
   - component: {fileID: 446712749}
   m_Layer: 5
-  m_Name: HelpButton
+  m_Name: TutorialButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11048,9 +11048,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Help
-
-'
+  m_text: Tutorial
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: af08e0b11a91f044895a3c8e44bb7e82, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: a95a4eac4c006fc4db287a762511c057, type: 2}
