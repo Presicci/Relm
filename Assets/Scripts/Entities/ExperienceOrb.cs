@@ -1,10 +1,20 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ExperienceOrb : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer spriteRenderer;
     private int _experienceReward;
     private PlayerExperience _target;
     private float _speed;
+    private AudioSource _audioSource;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.pitch = Random.Range(.8f, 1.2f);
+    }
 
     public void SetExperience(int experience)
     {
@@ -25,6 +35,7 @@ public class ExperienceOrb : MonoBehaviour
         if (transform.position == _target.transform.position)
         {
             _target.AddExperience(_experienceReward);
+            _audioSource.Play();
             expDing();
             //Destroy(gameObject);
         }
@@ -38,11 +49,11 @@ public class ExperienceOrb : MonoBehaviour
     private void expDing()
     {
         //play sound
-        GetComponent<AudioSource>().pitch = Random.Range(.8f, 1.2f);
-        GetComponent<AudioSource>().Play();
-        //move orb behind screen
-        transform.position = new Vector3(0, 0, -100);
-        Destroy(gameObject, 3);
+        _audioSource.Play();
+        _speed = 0;
+        Destroy(gameObject, 1);
+        spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+
     }
 
 }

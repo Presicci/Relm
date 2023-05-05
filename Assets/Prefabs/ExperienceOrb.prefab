@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0462a44d75a027a4caa4f1100ccdab66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 6308203705921999735}
 --- !u!58 &6308203706037998145
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -161,7 +162,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 7dd0432260c73d84b93c83f835a09a17, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
