@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
-  m_Name: Human Skull
+  m_Name: Juggernaut Helmet
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8066e15c4e3df6e4f9806f9d5f71e70a, type: 3}
-  itemName: Human Skull
-  itemDescription: Surely you wont try to...
+  sprite: {fileID: 21300000, guid: ee0ed61959fdb2a4fa6a6294228f5f47, type: 3}
+  itemName: Juggernaut Helmet
+  itemDescription: Cool as hell.
   itemType: 1
   equipSlot: 1
   stackable: 0

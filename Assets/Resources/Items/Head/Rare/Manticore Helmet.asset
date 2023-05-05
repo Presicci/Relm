@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
-  m_Name: Red Bandana
+  m_Name: Manticore Helmet
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 06823b49a1fcd154da0942a436195adb, type: 3}
-  itemName: Red Bandana
-  itemDescription: You feel slightly cooler wearing this.
+  sprite: {fileID: 21300000, guid: 9d4ad9585d881b9469236aa4e598a8b1, type: 3}
+  itemName: Manticore Helmet
+  itemDescription: Traditional, with a twist.
   itemType: 1
   equipSlot: 1
   stackable: 0
   affixes:
-  - attribute: 0
-    valueMultiplier: 1.1
+  - attribute: 6
+    valueMultiplier: 2
