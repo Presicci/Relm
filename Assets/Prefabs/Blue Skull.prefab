@@ -411,7 +411,7 @@ MonoBehaviour:
     weight: 1
   - item: {fileID: 0}
     amount: 1
-    weight: 25000
+    weight: 20000
 --- !u!82 &1892644670773433386
 AudioSource:
   m_ObjectHideFlags: 0
