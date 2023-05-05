@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Wool Slippers
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: daa455ea29b1fae49895e5558116ec90, type: 3}
+  sprite: {fileID: 21300000, guid: 6f6648c32a819be4a87ef3bad2807bad, type: 3}
   itemName: Wool Slippers
   itemDescription: Elegent and fashionable.
   itemType: 1

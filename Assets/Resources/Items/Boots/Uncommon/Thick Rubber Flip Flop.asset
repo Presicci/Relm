@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Thick Rubber Flip Flop
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: daa455ea29b1fae49895e5558116ec90, type: 3}
+  sprite: {fileID: 21300000, guid: 12bba31e10a26b645908ca35cce3ac2a, type: 3}
   itemName: Thick Rubber Flip Flop
   itemDescription: Intimidation by the pure sound of these bad boys.
   itemType: 1
