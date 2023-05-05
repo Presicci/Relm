@@ -79128,6 +79128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4382af8987b214aa9b8e8e50fa759c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textMesh: {fileID: 962194873}
   forceUpdate: 0
 --- !u!114 &1606866789
 MonoBehaviour:
@@ -79210,7 +79211,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.979, y: 4.533984}
-  m_SizeDelta: {x: 566.9, y: 422}
+  m_SizeDelta: {x: 625, y: 422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1615808704
 GameObject:

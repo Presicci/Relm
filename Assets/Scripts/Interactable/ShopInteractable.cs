@@ -18,4 +18,14 @@ public class ShopInteractable : Interactable
     {
         shopUI.CloseShop();
     }
+
+    public override Vector3 GetPromptOffset()
+    {
+        return new Vector3(0, 2.3f);
+    }
+    
+    public override string GetPrompt()
+    {
+        return "F to browse";
+    }
 }

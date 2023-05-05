@@ -6,7 +6,8 @@ using UnityEngine;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public abstract class Interactable : MonoBehaviour
 {
-    protected Vector3 PromptOffset = new (0, 1.3f);    // Default offset, can be overwritten
+    private readonly Vector3 _promptOffset = new (0, 1.3f);    // Default offset, can be overwritten
+    private const string Prompt = "F to open";
     protected bool CanInteract = true;
 
     public abstract void Interact();
@@ -16,8 +17,13 @@ public abstract class Interactable : MonoBehaviour
         return CanInteract;
     }
 
-    public Vector3 GetPromptOffset()
+    public virtual Vector3 GetPromptOffset()
     {
-        return PromptOffset;
+        return _promptOffset;
+    }
+
+    public virtual string GetPrompt()
+    {
+        return Prompt;
     }
 }
