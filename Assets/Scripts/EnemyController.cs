@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private EnemyDumbAI tier4Enemy;
     [SerializeField] private TilemapRenderer tilemapRenderer;
     [SerializeField] private Player player;
+    [SerializeField] private float spawnOffset;
     
     private GameTimer _timer;
     private readonly List<EnemyDumbAI> _activeEnemies = new List<EnemyDumbAI>();
@@ -64,11 +65,11 @@ public class EnemyController : MonoBehaviour
             int spawnAmount = (int) (_timer.GetTime() / 180) + 1;
             for (int index = 0; index < spawnAmount; index++)
             {
-                Vector3 offset = Random.insideUnitCircle.normalized * 9f;
+                Vector3 offset = Random.insideUnitCircle.normalized * spawnOffset;
                 var tries = 0;
                 while (!tilemapRenderer.bounds.Contains(player.transform.position + offset))
                 {
-                    offset = Random.insideUnitCircle.normalized * 9f;
+                    offset = Random.insideUnitCircle.normalized * spawnOffset;
                     if (tries++ > 15) break;
                 }
                 EnemyDumbAI enemy = Instantiate(possibleEnemies[Random.Range(0, possibleEnemies.Count)], player.transform.position + offset, Quaternion.identity);

@@ -88787,6 +88787,7 @@ MonoBehaviour:
     type: 3}
   tilemapRenderer: {fileID: 151825650}
   player: {fileID: 1128659553}
+  spawnOffset: 12
 --- !u!114 &2047382968
 MonoBehaviour:
   m_ObjectHideFlags: 0
