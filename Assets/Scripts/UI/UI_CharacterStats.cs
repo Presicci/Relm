@@ -29,12 +29,16 @@ public class UI_CharacterStats : MonoBehaviour
         while (gameObject.activeInHierarchy)
         {
             yield return new WaitForSeconds(1);
-            Debug.Log("refresh");
-            _children ??= statsContainer.GetComponentsInChildren<UI_CharacterStatsElement>();
-            foreach (var child in _children)
-            {
-                child.UpdateValue(playerAttributes);
-            }
+            ReloadStats();
+        }
+    }
+
+    public void ReloadStats()
+    {
+        _children ??= statsContainer.GetComponentsInChildren<UI_CharacterStatsElement>();
+        foreach (var child in _children)
+        {
+            child.UpdateValue(playerAttributes);
         }
     }
 }

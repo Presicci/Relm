@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class UI_Equipment : MonoBehaviour
 {
+    [SerializeField] private UI_CharacterStats statsMenu;
     [SerializeField] private List<UI_EquipmentSlot> slots = new List<UI_EquipmentSlot>();
     [SerializeField] private Player player;
     private Dictionary<AttributeType, float> _attributes;
@@ -35,10 +36,7 @@ public class UI_Equipment : MonoBehaviour
                 _attributes[affix.attribute] += (affix.valueMultiplier - 1f);
             }
         }
-        foreach (var key in _attributes.Keys.ToList())
-        {
-            Debug.Log(key + ":" + _attributes[key]);
-        }
+        statsMenu.ReloadStats();
     }
 
     public void EquipItem(Item item)
