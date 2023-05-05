@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: Shop 1
   m_EditorClassIdentifier: 
   items:
-  - item: {fileID: 11400000, guid: 608c2fd1cb5f4ef4cb26f6817507d27a, type: 2}
-    cost: 15
-  - item: {fileID: 11400000, guid: a53be7a7f2d525244bfc4eefad32d3c6, type: 2}
+  - item: {fileID: 11400000, guid: db377953ca09b434caeb409740cab3d8, type: 2}
     cost: 5
-  - item: {fileID: 11400000, guid: b898659e9f7382a47b9a02ccd897d4b9, type: 2}
-    cost: 1
+  - item: {fileID: 11400000, guid: d3303d0f260f53440b1a058c11ad100d, type: 2}
+    cost: 5
+  - item: {fileID: 11400000, guid: ef5b7fdc8120c8c4aab64c33b0baccbc, type: 2}
+    cost: 10
+  - item: {fileID: 11400000, guid: 2ae50b9b4e53c44bc9e6976db1759186, type: 2}
+    cost: 35
+  - item: {fileID: 11400000, guid: ed6aa26a62dc24c49bc5d1acbfaf0c2c, type: 2}
+    cost: 30
+  - item: {fileID: 11400000, guid: a272440c7ffae4444a9b8e3698c326be, type: 2}
+    cost: 25
+  - item: {fileID: 11400000, guid: 76ba3c5d0a31a70488b868b83199511a, type: 2}
+    cost: 25
+  - item: {fileID: 11400000, guid: bfd476164de4dc449803f6d5aae157e1, type: 2}
+    cost: 30
+  - item: {fileID: 11400000, guid: 23f3c9bbfab16ac42a725a4260bc6447, type: 2}
+    cost: 1500000

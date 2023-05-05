@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject statsMenu;
     [SerializeField] private GameObject characterPage;
+    [SerializeField] private GameObject shop;
     [SerializeField] private float movementSpeed;
     [SerializeField] private UI_Tooltip tooltip;
     
@@ -81,12 +82,19 @@ public class PlayerController : MonoBehaviour
             Time.timeScale = 0f;
         }
     }
+
+    public void CloseShop()
+    {
+        shop.SetActive(false);
+        ContinueGame();
+    }
     
     public void ContinueGame()
     {
         if (pauseMenu.activeInHierarchy) return;
         if (characterPage.activeInHierarchy) return;
         if (upgradeSelect.activeInHierarchy) return;
+        if (shop.activeInHierarchy) return;
         Time.timeScale = 1f;
     }
 

@@ -33,6 +33,7 @@ public class UI_Shop : MonoBehaviour
             UI_ShopItem shopItem = Instantiate(shopItemPrefab, container);
             shopItem.SetupItem(item, this);
         }
+        Time.timeScale = 0f;
     }
     
     private void ResetShopItems()
@@ -74,8 +75,10 @@ public class UI_Shop : MonoBehaviour
         _errorDisplayed = true;
         previewBuyText.color = Color.red;
         previewBuyText.text = message;
-        yield return new WaitForSeconds(2f);
-        previewBuyText.color = Color.white;
+        previewBuyText.fontSize = 28f;
+        yield return new WaitForSecondsRealtime(2f);
+        previewBuyText.color = Color.black;
+        previewBuyText.fontSize = 32f;
         DisplayQuantity();
         _errorDisplayed = false;
     }

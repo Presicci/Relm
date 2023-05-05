@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Item")]
+[CreateAssetMenu(menuName = "ScriptableObjects/AttributeItem")]
 public class AttributeItemObject : ScriptableObject
 {
     [Tooltip("Inventory image.")]

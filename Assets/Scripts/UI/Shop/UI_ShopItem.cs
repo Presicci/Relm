@@ -1,9 +1,8 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UI_ShopItem : MonoBehaviour, IPointerClickHandler
+public class UI_ShopItem : MonoBehaviour
 {
     [SerializeField] private Image itemImage;
     [SerializeField] private TextMeshProUGUI itemName;
@@ -23,7 +22,7 @@ public class UI_ShopItem : MonoBehaviour, IPointerClickHandler
         _item = shopItem;
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void Click()
     {
         _shopUI.ClickItem(_item);
     }
