@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Iron Dagger
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 15d8ba1d11ed8c941b9676432344c5c9, type: 3}
+  sprite: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
   itemName: Iron Dagger
   itemDescription: 
   itemType: 2

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Freeze Rend
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 32321c27d54acba4da6fa3f813dca153, type: 3}
+  sprite: {fileID: 21300000, guid: a59d6029d282ea148bf57966b0c2401e, type: 3}
   itemName: Freeze Rend
   itemDescription: 
   itemType: 2

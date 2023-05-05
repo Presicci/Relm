@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Stardust Hammer
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 2d2c455c9b864a9409e6b61578a88e25, type: 3}
+  sprite: {fileID: 21300000, guid: 7dfd68325eeac354d866d207e4d2744c, type: 3}
   itemName: Stardust Hammer
   itemDescription: 
   itemType: 2

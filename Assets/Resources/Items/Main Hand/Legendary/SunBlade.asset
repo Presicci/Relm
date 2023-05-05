@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: SunBlade
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ff6d07475cee32c4ca7a0d0d00025340, type: 3}
+  sprite: {fileID: 21300000, guid: d605befd4bec61449b7a5c492aaf2361, type: 3}
   itemName: Sun Blade
   itemDescription: 
   itemType: 2

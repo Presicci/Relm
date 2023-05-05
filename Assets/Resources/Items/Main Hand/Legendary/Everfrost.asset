@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa17e9779a1a8a4a96a993e4bd03da0, type: 3}
   m_Name: Everfrost
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 5e0798397b98a15439752e6a692ac4db, type: 3}
+  sprite: {fileID: 21300000, guid: d54a9728519c5d54bbe09aff5bd95284, type: 3}
   itemName: Everfrost
   itemDescription: 
   itemType: 2
