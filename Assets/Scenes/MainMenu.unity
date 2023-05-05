@@ -4957,6 +4957,8 @@ MonoBehaviour:
   fullscreenTog: {fileID: 1113853480}
   vsyncTog: {fileID: 451766911}
   resolutions:
+  - horizontal: 2560
+    vertical: 1440
   - horizontal: 1920
     vertical: 1080
   - horizontal: 1366
