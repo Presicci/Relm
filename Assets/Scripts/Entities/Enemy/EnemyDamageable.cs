@@ -43,6 +43,7 @@ public class EnemyDamageable : Damageable
         }
         ExperienceOrb orb = Instantiate(experienceOrb, transform.position, Quaternion.identity);
         orb.SetExperience(experienceReward);
+        GameManager.GetPlayer().IncrementGold(1);
     }
 
     protected override void OnDamageTaken()
