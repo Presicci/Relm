@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Controller for the player character.
@@ -86,6 +87,7 @@ public class PlayerController : MonoBehaviour
     public void CloseShop()
     {
         shop.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
         ContinueGame();
     }
     
