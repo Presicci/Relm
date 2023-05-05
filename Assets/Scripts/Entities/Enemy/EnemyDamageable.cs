@@ -9,11 +9,13 @@ public class EnemyDamageable : Damageable
     public float forceMultiplier;
     private Rigidbody2D _rigidbody2D;
     private LootTable _lootTable;
+    private AudioSource _audioSource;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _lootTable = transform.GetComponent<LootTable>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -24,7 +26,7 @@ public class EnemyDamageable : Damageable
         if (playerWeaponDamage == null) return;
         Damage(playerWeaponDamage.GetDamage());  
         //play sound
-        GetComponent<AudioSource>().Play();
+        _audioSource.Play();
         _rigidbody2D.AddForce(forceMultiplier * (transform.position - (projectile ? col.transform.position : col.transform.parent.parent.position)).normalized, ForceMode2D.Impulse);
         if (col.CompareTag("PlayerProjectile"))
             Destroy(col.gameObject);
