@@ -40,9 +40,7 @@ public class PlayerController : MonoBehaviour
         }
         if (GameInput.KeyDownCheck(KeyCode.Escape))
         {
-            var active = pauseMenu.activeInHierarchy;
-            pauseMenu.SetActive(!active);
-            Time.timeScale = active ? (characterPage.activeInHierarchy ? 0f: 1f) : 0f;
+            TogglePauseMenu();
         }
         if (GameInput.KeyDownCheck(KeyCode.B))
         {
@@ -54,14 +52,34 @@ public class PlayerController : MonoBehaviour
             statsMenu.gameObject.SetActive(!statsMenu.activeInHierarchy);
         }
     }
+    
+    public void TogglePauseMenu()
+    {
+        var active = pauseMenu.activeInHierarchy;
+        pauseMenu.SetActive(!active);
+        if (active)
+        {
+            ContinueGame();
+        }
+        else
+        {
+            Time.timeScale = 0f;
+        }
+    }
 
     public void ToggleCharacterPage()
     {
         var active = characterPage.activeInHierarchy;
         characterPage.SetActive(!active);
         if (active)
+        {
             tooltip.DisableTooltip();
-        Time.timeScale = active ? (pauseMenu.activeInHierarchy ? 0f : 1f) : 0f;
+            ContinueGame();
+        }
+        else
+        {
+            Time.timeScale = 0f;
+        }
     }
     
     public void ContinueGame()
