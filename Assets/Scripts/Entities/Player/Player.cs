@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -8,12 +9,14 @@ using UnityEngine;
 [Serializable]
 public class Player : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI goldDisplay;
     private Inventory _inventory;
     public int Gold { set; get; }
 
     public void IncrementGold(int value)
     {
         Gold += value;
+        goldDisplay.text = Gold + "";
     }
     
     private void Start()
