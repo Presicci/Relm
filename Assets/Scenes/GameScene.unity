@@ -87325,6 +87325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfaf035d09e6a9744a3a4e16068b567c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screenGoldDisplay: {fileID: 1791862896}
   container: {fileID: 440776504}
   shopItemPrefab: {fileID: 1656627190}
   shopPreview: {fileID: 1098072504}

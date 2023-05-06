@@ -9,6 +9,7 @@ using UnityEngine.EventSystems;
 /// <remarks>Thomas Presicci - https://github.com/Presicci</remarks>
 public class UI_Shop : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI screenGoldDisplay;
     [SerializeField] private Transform container;
     [SerializeField] private UI_ShopItem shopItemPrefab;
     [SerializeField] private UI_ShopPreview shopPreview;
@@ -104,6 +105,7 @@ public class UI_Shop : MonoBehaviour
     
     private void UpdatePlayerGold()
     {
+        screenGoldDisplay.text = "" + player.Gold;
         playerGold.text = "" + player.Gold;
         playerGold.ForceMeshUpdate();
     }
